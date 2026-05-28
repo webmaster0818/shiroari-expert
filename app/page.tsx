@@ -65,14 +65,10 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary-dark text-white">
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-15"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(135deg, #5a3a22 0px, #5a3a22 1px, transparent 1px, transparent 24px)",
-          }}
-        />
+        <div aria-hidden className="absolute inset-0">
+          <img src="/images/hero.png" alt="" className="w-full h-full object-cover opacity-45" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-dark via-primary-dark/85 to-primary-dark/30" />
+        </div>
         <div className="relative max-w-5xl mx-auto px-4 py-16 md:py-24">
           <p className="text-accent-light text-xs md:text-sm font-medium tracking-[0.2em] uppercase mb-4">
             Shiroari Expert Navi 2026
