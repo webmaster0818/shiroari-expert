@@ -3,4 +3,4 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
-Sitemap: https://shiroari-expert.com/sitemap.xml
+Sitemap: https://shiroari-expert-navi.com/sitemap.xml

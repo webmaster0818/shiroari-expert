@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, "..");
-const BASE = "https://shiroari-expert.com";
+const BASE = "https://shiroari-expert-navi.com";
 const OUT = path.join(ROOT, "public", "sitemap.xml");
 const TODAY = new Date().toISOString().slice(0, 10);
 
