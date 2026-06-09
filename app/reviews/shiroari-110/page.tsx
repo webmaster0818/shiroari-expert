@@ -112,21 +112,6 @@ export default function Page() {
     <ArticleLayout meta={meta} basePath="reviews" updatedAt="2026-06-10">
       <FaqJsonLd items={faqs} />
 
-      {/* 結論ボックス */}
-      <div className="not-prose border-l-4 border-accent bg-muted-bg rounded-r-md p-5 mb-8">
-        <p className="font-bold text-primary-dark mb-2">この記事の結論</p>
-        <p className="text-sm leading-relaxed mb-3">
-          シロアリ110番は<strong>東証上場企業が運営する全国対応のマッチング型サービス</strong>で、
-          <strong>1坪1,320円（税込）からの明朗価格</strong>が最大の魅力です。口コミ全体では
-          「料金が安く明朗」「電話対応が丁寧」という声が多い一方、
-          <strong>加盟店ごとの品質差</strong>を指摘する声もあります。
-          まずは無料の現地調査で見積もりを取り、他社と比較するのが失敗しない使い方です。
-        </p>
-        <p className="text-xs text-muted mb-0">
-          ※ 本記事の評価・口コミは、公式の利用者レビューおよび各口コミ調査サイトの公開情報をもとにまとめた参考情報です（出典は記事内に明記）。実際の対応・品質は担当加盟店により異なります。
-        </p>
-      </div>
-
       {/* 目次 */}
       <nav className="not-prose border border-border rounded-md p-5 mb-10 bg-white" aria-label="目次">
         <p className="font-bold text-primary-dark mb-3">目次</p>
