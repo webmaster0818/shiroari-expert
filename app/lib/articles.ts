@@ -3,7 +3,7 @@ export type ArticleMeta = {
   title: string;
   shortTitle: string;
   description: string;
-  category: "費用" | "症状" | "識別" | "対策" | "法律" | "補助金" | "比較" | "保険" | "予防" | "インスペクション";
+  category: "費用" | "症状" | "識別" | "対策" | "法律" | "補助金" | "比較" | "保険" | "予防" | "インスペクション" | "口コミ";
 };
 
 export const ARTICLES: ArticleMeta[] = [

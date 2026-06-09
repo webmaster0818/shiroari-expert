@@ -10,6 +10,7 @@ type Props = {
   children: React.ReactNode;
   publishedAt?: string;
   updatedAt?: string;
+  basePath?: string;
 };
 
 export function ArticleLayout({
@@ -17,10 +18,11 @@ export function ArticleLayout({
   children,
   publishedAt = "2026-05-28",
   updatedAt = "2026-05-28",
+  basePath = "articles",
 }: Props) {
   const crumbs: Crumb[] = [
     { name: "ホーム", href: "/" },
-    { name: meta.shortTitle, href: `/articles/${meta.slug}/` },
+    { name: meta.shortTitle, href: `/${basePath}/${meta.slug}/` },
   ];
 
   const articleSchema = {
@@ -34,7 +36,7 @@ export function ArticleLayout({
     publisher: { "@type": "Organization", name: SITE_NAME },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/articles/${meta.slug}/`,
+      "@id": `${SITE_URL}/${basePath}/${meta.slug}/`,
     },
   };
 
