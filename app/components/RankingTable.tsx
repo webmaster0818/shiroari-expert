@@ -67,7 +67,7 @@ export function RankingTable({ providers, showRank = true }: Props) {
               </div>
             </dl>
             <div className="flex flex-col sm:flex-row gap-2">
-              <CTAButton href={p.url} external sponsored variant="primary" className="flex-1">
+              <CTAButton href={p.affiliateUrl ?? p.url} external sponsored variant="primary" className="flex-1">
                 公式サイトで詳細を見る
               </CTAButton>
             </div>

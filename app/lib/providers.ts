@@ -15,6 +15,8 @@ export type Provider = {
   highlight: string;
   recommendedFor: string;
   sourceConfirmed: string;
+  affiliateUrl?: string;
+  affiliateBanner?: string;
 };
 
 export const PROVIDERS: Provider[] = [
@@ -36,6 +38,8 @@ export const PROVIDERS: Provider[] = [
     highlight: "全国対応で電話一本で見積もり依頼が可能",
     recommendedFor: "地方在住で地元業者の選択肢が少ない人",
     sourceConfirmed: "2026-05-28 公式サイト確認",
+    affiliateUrl: "https://t.felmat.net/fmcl?ak=R96405.1.A141101G.R138225Y",
+    affiliateBanner: "https://t.felmat.net/fmimg/R96405.A141101G.R138225Y",
   },
   {
     slug: "asante",

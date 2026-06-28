@@ -133,21 +133,32 @@ export default function Page() {
         全国に問い合わせ窓口を持ち、依頼が入ると地域の加盟店が現地調査・施工を担当する仕組みになっています。
       </p>
 
-      <figure className="not-prose my-6">
-        <img
-          src="/images/reviews/shiroari-110-official.webp"
-          alt="シロアリ110番の公式サイト"
-          width={1600}
-          height={1000}
-          loading="lazy"
-          className="w-full rounded-md border border-border"
-        />
+      <figure className="not-prose my-6 text-center">
+        <a
+          href={p.affiliateUrl ?? p.url}
+          target="_blank"
+          rel="nofollow noopener"
+          className="inline-block"
+        >
+          <img
+            src={p.affiliateBanner ?? "/images/reviews/shiroari-110-official.webp"}
+            alt="シロアリ110番"
+            width={300}
+            height={250}
+            loading="lazy"
+            className="inline-block rounded-md border border-border"
+          />
+        </a>
         <figcaption className="text-xs text-muted mt-2 text-center">
-          シロアリ110番 公式サイト（
-          <a href={p.url} target="_blank" rel="noopener noreferrer" className="underline">
+          シロアリ110番（PR）／公式サイト：
+          <a
+            href={p.affiliateUrl ?? p.url}
+            target="_blank"
+            rel="nofollow noopener"
+            className="underline"
+          >
             {p.url}
           </a>
-          ）
         </figcaption>
       </figure>
 
