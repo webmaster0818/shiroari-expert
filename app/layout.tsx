@@ -299,7 +299,7 @@ function SiteFooter() {
         </div>
         <div className="border-t border-white/15 mt-8 pt-6 text-center text-xs text-white/55">
           <p>&copy; 2026 {SITE_NAME} All rights reserved.</p>
-          <p className="mt-1">※当サイトはアフィリエイト広告を利用しています。</p>
+          <p className="mt-1">※本サイトはプロモーション(PR)を含みます。</p>
         </div>
       </div>
     </footer>
