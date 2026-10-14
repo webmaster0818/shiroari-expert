@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Provider } from "../lib/providers";
 
 type Props = {
@@ -32,6 +33,11 @@ export function ComparisonTable({ providers }: Props) {
                 >
                   {p.name}
                 </a>
+                {p.reviewPath && (
+                  <Link href={p.reviewPath} className="block mt-1 text-xs font-normal text-accent underline">
+                    口コミ・評判
+                  </Link>
+                )}
               </td>
               <td className="px-3 py-3 align-top border-t border-border text-xs">
                 {p.operator}

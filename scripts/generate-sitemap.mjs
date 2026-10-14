@@ -54,6 +54,12 @@ function articleSlugs() {
     .sort();
 }
 
+// エリアページは app/lib/areas.ts の slug をそのまま使う（手で二重管理しない）
+function areaSlugs() {
+  const src = fs.readFileSync(path.join(ROOT, "app", "lib", "areas.ts"), "utf8");
+  return [...src.matchAll(/slug:\s*"([a-z-]+)"/g)].map((m) => m[1]);
+}
+
 function build() {
   const lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
@@ -75,8 +81,18 @@ function build() {
     );
   }
 
+  const areas = areaSlugs();
+  lines.push(
+    `  <url><loc>${BASE}/area/</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>`,
+  );
+  for (const slug of areas) {
+    lines.push(
+      `  <url><loc>${BASE}/area/${slug}/</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`,
+    );
+  }
+
   lines.push("</urlset>", "");
-  return { xml: lines.join("\n"), total: STATIC_PAGES.length + articles.length };
+  return { xml: lines.join("\n"), total: STATIC_PAGES.length + articles.length + areas.length + 1 };
 }
 
 const result = build();

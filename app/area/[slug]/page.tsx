@@ -46,7 +46,22 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   if (!a) return null;
   const subsidy = SUBSIDIES.find((s) => s.pref === a.pref);
   const providers = getTopProviders().slice(0, 5);
-  const nearby = AREAS.filter((x) => x.region === a.region && x.slug !== a.slug).slice(0, 6);
+  // 同じ地方の前後3県ずつを循環で出す（以前は先頭6県固定で、7番目以降の県と北海道・沖縄がどこからも張られていなかった）。
+  const sameRegion = AREAS.filter((x) => x.region === a.region);
+  const ri = sameRegion.findIndex((x) => x.slug === a.slug);
+  const nearby: typeof AREAS = [];
+  for (const d of [1, -1, 2, -2, 3, -3]) {
+    const n = sameRegion[(ri + d + sameRegion.length * 4) % sameRegion.length];
+    if (n && n.slug !== a.slug && !nearby.includes(n)) nearby.push(n);
+  }
+  {
+    // 全国の並びで隣の県も足す（地方の境目＝北海道⇔青森 などをつなぐ）。地方内が3県未満なら前後2県まで。
+    const gi = AREAS.findIndex((x) => x.slug === a.slug);
+    for (const d of nearby.length < 3 ? [1, -1, 2, -2] : [1, -1]) {
+      const n = AREAS[gi + d];
+      if (n && n.slug !== a.slug && !nearby.includes(n)) nearby.push(n);
+    }
+  }
 
   const crumbs: Crumb[] = [
     { name: "ホーム", href: "/" },

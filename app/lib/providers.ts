@@ -17,6 +17,8 @@ export type Provider = {
   sourceConfirmed: string;
   affiliateUrl?: string;
   affiliateBanner?: string;
+  // サイト内の口コミ・評判ページ。比較表・ランキングから張る（2026-10-14 /reviews/shiroari-110/ がどこからも張られていなかった）
+  reviewPath?: string;
 };
 
 export const PROVIDERS: Provider[] = [
@@ -28,18 +30,19 @@ export const PROVIDERS: Provider[] = [
     tagline: "全国対応・公益社団法人日本しろあり対策協会の加盟業者と連携",
     features: [
       "全国47都道府県の加盟店ネットワーク（公式記載）",
-      "1坪あたり1,320円（税込）からの明朗価格表示",
-      "5年保証・年1回の無料点検（公式記載）",
+      "1㎡あたり1,320円（税込）・66㎡以下は一律88,000円（税込）の明朗価格表示",
+      "現地調査・見積もりは原則無料、正式見積もり後の追加料金なし（公式記載）",
     ],
     areas: "全国47都道府県（地域により対応加盟店が異なる）",
-    fee: "公式で1坪1,320円（税込）からと明記。被害状況・床面積で変動",
-    warranty: "5年保証・年1回の無料点検（加盟店により条件あり）",
-    phone: "0120-588-220（24時間365日）",
+    fee: "公式で1㎡あたり1,320円（税込）、66㎡以下は一律88,000円（税込）と明記。障害物の移動・ハツリ・柱の補強は別料金",
+    warranty: "5年間保証（加盟店による保証・期間や内容は加盟店で異なる場合あり）",
+    phone: "0120-949-952（24時間365日・通話無料）",
     highlight: "全国対応で電話一本で見積もり依頼が可能",
     recommendedFor: "地方在住で地元業者の選択肢が少ない人",
-    sourceConfirmed: "2026-05-28 公式サイト確認",
+    sourceConfirmed: "2026-10-14 公式サイト確認",
     affiliateUrl: "https://t.felmat.net/fmcl?ak=R96405.1.A141101G.R138225Y",
     affiliateBanner: "https://t.felmat.net/fmimg/R96405.A141101G.R138225Y",
+    reviewPath: "/reviews/shiroari-110/",
   },
   {
     slug: "asante",

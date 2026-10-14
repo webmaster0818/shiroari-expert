@@ -1,4 +1,5 @@
 import { Provider } from "../lib/providers";
+import Link from "next/link";
 import { CTAButton } from "./CTAButton";
 
 type Props = {
@@ -70,6 +71,14 @@ export function RankingTable({ providers, showRank = true }: Props) {
               <CTAButton href={p.affiliateUrl ?? p.url} external sponsored variant="primary" className="flex-1">
                 公式サイトで詳細を見る
               </CTAButton>
+              {p.reviewPath && (
+                <Link
+                  href={p.reviewPath}
+                  className="flex-1 inline-flex items-center justify-center border border-primary text-primary font-bold text-sm rounded-sm px-4 py-3 hover:bg-muted-bg"
+                >
+                  {p.name}の口コミ・評判を見る
+                </Link>
+              )}
             </div>
             <p className="text-[10px] text-muted mt-3">
               ※情報は{p.sourceConfirmed}時点。最新の対応エリア・料金は公式サイトでご確認ください。
