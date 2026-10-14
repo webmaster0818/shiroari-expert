@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbJsonLd } from "../components/Breadcrumb";
 import { SITE_NAME } from "../lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/editorial/" },
   title: "編集方針",
   description: `${SITE_NAME}の編集方針、業者選定基準、広告掲載基準について解説します。`,
 };

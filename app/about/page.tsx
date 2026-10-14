@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbJsonLd } from "../components/Breadcrumb";
 import { SITE_NAME } from "../lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about/" },
   title: "運営者情報",
   description: `${SITE_NAME}の運営者情報、運営方針、お問い合わせ方法についてご案内します。`,
 };

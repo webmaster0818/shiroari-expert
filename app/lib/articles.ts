@@ -8,6 +8,38 @@ export type ArticleMeta = {
 
 export const ARTICLES: ArticleMeta[] = [
   {
+    slug: "shiroari-shurui-bunpu",
+    shortTitle: "種類と分布",
+    title: "日本のシロアリの種類と分布｜自分の地域でどれが出るか",
+    description:
+      "建築物を加害するシロアリは主にヤマトシロアリとイエシロアリで、分布が違います。イエシロアリは神奈川県以西の海岸線に沿った温暖な地域と千葉県の一部、南西諸島、小笠原諸島。地域ごとにどの種類が対象になるかを整理しました。",
+    category: "識別",
+  },
+  {
+    slug: "shiroari-tenken-jiki",
+    shortTitle: "点検の時期",
+    title: "シロアリ点検はいつ受ける？｜羽アリの時期から逆算する",
+    description:
+      "点検の適期は羽アリが出る時期から逆算できます。ヤマトシロアリは4〜5月の昼（沖縄2月・東北北海道6月ごろ）、イエシロアリは6〜7月の夜。群飛を見てから慌てないための点検サイクルを整理しました。",
+    category: "予防",
+  },
+  {
+    slug: "shiroari-hosho-naiyou",
+    shortTitle: "保証の読み方",
+    title: "シロアリ駆除の「5年保証」は何を保証するのか｜見積書の読み方",
+    description:
+      "5年保証と書かれていても、再発時の再施工までなのか、被害材の修繕まで含むのかは会社ごとに違います。保証の範囲・免責・点検義務など、契約前に確認すべき項目を整理しました。",
+    category: "比較",
+  },
+  {
+    slug: "shiroari-aimitsumori",
+    shortTitle: "相見積もりの取り方",
+    title: "シロアリ駆除の相見積もりの取り方｜同じ条件で比べるには",
+    description:
+      "床面積・工法・薬剤・保証年数がそろっていない見積もりを並べても比較になりません。2社以上から同じ条件で見積もりを取り、金額差の理由を説明できる状態にするための手順をまとめました。",
+    category: "比較",
+  },
+  {
     slug: "shiroari-kuchu-hiyou",
     shortTitle: "駆除費用と5年TCO",
     title: "シロアリ駆除費用の相場｜バリア工法 vs ベイト工法 5年TCO比較",

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ARTICLES } from "./lib/articles";
 import { getTopProviders, PROVIDERS } from "./lib/providers";
@@ -6,6 +7,10 @@ import { RankingTable } from "./components/RankingTable";
 import { RegionList } from "./components/RegionList";
 import { CTAButton, PhoneCTA } from "./components/CTAButton";
 import { FAQ, FaqJsonLd, FaqItem } from "./components/FAQ";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const faqs: FaqItem[] = [
   {

@@ -39,11 +39,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} | シロアリ駆除の専門ガイド`,
     description: SITE_DESCRIPTION,
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} | シロアリ駆除の専門ガイド`,
     description: SITE_DESCRIPTION,
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -116,6 +118,12 @@ function SiteHeader() {
             駆除費用
           </Link>
           <Link
+            href="/area/"
+            className="hover:text-primary transition-colors"
+          >
+            エリア別
+          </Link>
+          <Link
             href="/articles/shiroari-hojo-kin-zenkoku/"
             className="hover:text-primary transition-colors"
           >
@@ -151,6 +159,12 @@ function SiteHeader() {
               className="block px-4 py-2 text-sm hover:bg-muted-bg transition-colors"
             >
               ホーム
+            </Link>
+            <Link
+              href="/area/"
+              className="block px-4 py-2 text-sm hover:bg-muted-bg transition-colors"
+            >
+              エリア別（47都道府県）
             </Link>
             <Link
               href="/articles/shiroari-gyousha-erabikata/"

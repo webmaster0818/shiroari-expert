@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbJsonLd } from "../components/Breadcrumb";
 import { SITE_NAME } from "../lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy-policy/" },
   title: "プライバシーポリシー",
   description: `${SITE_NAME}のプライバシーポリシー。当サイトでの個人情報の取り扱い、Cookie・アクセス解析、広告配信について記載しています。`,
 };

@@ -6,6 +6,7 @@ import { getArticle } from "../../lib/articles";
 const meta = getArticle("shiroari-kasai-hoken")!;
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/articles/shiroari-kasai-hoken/" },
   title: meta.title,
   description: meta.description,
 };

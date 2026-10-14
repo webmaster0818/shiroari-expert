@@ -3,6 +3,7 @@ import { Breadcrumb, BreadcrumbJsonLd } from "../components/Breadcrumb";
 import { SITE_NAME } from "../lib/site";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms-of-service/" },
   title: "利用規約",
   description: `${SITE_NAME}の利用規約。当サイトを利用する上での条件、禁止事項、免責事項について記載しています。`,
 };
