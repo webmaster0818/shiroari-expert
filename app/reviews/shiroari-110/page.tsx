@@ -69,6 +69,16 @@ const faqs: FaqItem[] = [
     answer:
       "支払いは施工後です。クレジットカードも使えますが、一部の加盟店・エリアでは使えないため、受付時に確認してください。",
   },
+  {
+    question: "シロアリ110番は苦情が多いのですか？",
+    answer:
+      "シロアリ110番だけの苦情件数を公的機関が公表したデータは確認できませんでした（2026年10月15日時点）。運営会社の自社調査（2025年・498件）の総合満足度は4.7点ですが、同じページに「話しと違いガッカリ！」などの不満の声も掲載されています。施工するのは加盟店のため、体験は担当する加盟店によって差が出ます。",
+  },
+  {
+    question: "トラブルになったらどこに相談すればいいですか？",
+    answer:
+      "利用規約上、契約・苦情・キャンセルの窓口は施工した加盟店です。話し合いで解決しない場合は、消費者庁の消費者ホットライン（188）に電話すると、最寄りの消費生活センターなどを案内してもらえます。",
+  },
 ];
 
 function Stars({ value }: { value: number }) {
@@ -83,24 +93,12 @@ function Stars({ value }: { value: number }) {
   );
 }
 
-function ReviewCard({
-  rating,
-  body,
-  tag,
-}: {
-  rating: number;
-  body: string;
-  tag: string;
-}) {
+function ReviewCard({ body, tag }: { body: string; tag: string }) {
   return (
     <figure className="not-prose border border-border rounded-md p-5 bg-white">
       <figcaption className="flex items-center justify-between mb-2">
         <span className="text-xs font-bold text-primary-dark bg-primary/10 border border-primary/20 px-2 py-0.5 rounded-sm">
           {tag}
-        </span>
-        <span className="text-sm">
-          <Stars value={rating} />
-          <span className="ml-1 text-muted text-xs">{rating.toFixed(1)}</span>
         </span>
       </figcaption>
       <blockquote className="text-sm leading-relaxed text-foreground/85 m-0">
@@ -117,16 +115,20 @@ const TOC = [
   ["price", "料金は本当に安い？相場との比較"],
   ["include", "料金に含まれるもの・含まれないもの"],
   ["reviews", "実際の口コミ・評判（良い声・悪い声）"],
+  ["official-voice", "公式ページに載っている不満の声（原文）"],
+  ["kujo", "「苦情が多い」「やばい」は本当？"],
+  ["source", "口コミ情報の見方（出典ごとの特徴）"],
   ["merit", "口コミからわかったメリット"],
   ["demerit", "口コミからわかったデメリット・注意点"],
   ["who", "向いている人・向いていない人"],
   ["flow", "申し込みから施工までの流れ"],
+  ["trouble", "トラブルになったときの相談先"],
   ["faq", "よくある質問"],
 ];
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} basePath="reviews" updatedAt="2026-10-14">
+    <ArticleLayout meta={meta} basePath="reviews" updatedAt="2026-10-15">
       <FaqJsonLd items={faqs} />
 
       {/* 目次 */}
@@ -311,10 +313,10 @@ export default function Page() {
 
       <h3>良い口コミ</h3>
       <div className="not-prose grid sm:grid-cols-2 gap-4 my-5">
-        <ReviewCard tag="料金・明朗さ" rating={5} body="電話対応がとても良く、見積もりした業者も親切に説明してくれた。金額もホームページ通りで、追加費用もなかった。" />
-        <ReviewCard tag="作業の丁寧さ" rating={4.5} body="作業は丁寧で、床下の状況も写真で見せてくれた。コールセンターの対応も感じが良かった。" />
-        <ReviewCard tag="価格満足" rating={4.5} body="一般的な相場より安く、想定よりかなり費用を抑えられた。明朗会計で安心できた。" />
-        <ReviewCard tag="スピード" rating={4} body="電話一本ですぐ手配してくれて、見積もりまで早かった。地方でも対応してもらえて助かった。" />
+        <ReviewCard tag="料金・明朗さ" body="電話対応がとても良く、見積もりした業者も親切に説明してくれた。金額もホームページ通りで、追加費用もなかった。" />
+        <ReviewCard tag="作業の丁寧さ" body="作業は丁寧で、床下の状況も写真で見せてくれた。コールセンターの対応も感じが良かった。" />
+        <ReviewCard tag="価格満足" body="一般的な相場より安く、想定よりかなり費用を抑えられた。明朗会計で安心できた。" />
+        <ReviewCard tag="スピード" body="電話一本ですぐ手配してくれて、見積もりまで早かった。地方でも対応してもらえて助かった。" />
       </div>
 
       <figure className="not-prose my-6">
@@ -337,10 +339,10 @@ export default function Page() {
 
       <h3>悪い口コミ・気になる声</h3>
       <div className="not-prose grid sm:grid-cols-2 gap-4 my-5">
-        <ReviewCard tag="加盟店の差" rating={2.5} body="加盟店によって対応や態度に差があると感じた。担当によって当たり外れがあるかもしれない。" />
-        <ReviewCard tag="連絡" rating={3} body="営業担当と作業員の連絡ミスがあり、到着が予定より遅れた。連絡がもう少しスムーズだと良かった。" />
-        <ReviewCard tag="最低料金" rating={3} body="被害箇所が狭かったが最低料金が一律で、面積の割にやや割高に感じた。" />
-        <ReviewCard tag="仲介の仕組み" rating={3} body="実際に来るのは加盟店なので、どの業者が来るかは事前に分かりづらかった。" />
+        <ReviewCard tag="加盟店の差" body="加盟店によって対応や態度に差があると感じた。担当によって当たり外れがあるかもしれない。" />
+        <ReviewCard tag="連絡" body="営業担当と作業員の連絡ミスがあり、到着が予定より遅れた。連絡がもう少しスムーズだと良かった。" />
+        <ReviewCard tag="最低料金" body="被害箇所が狭かったが最低料金が一律で、面積の割にやや割高に感じた。" />
+        <ReviewCard tag="仲介の仕組み" body="実際に来るのは加盟店なので、どの業者が来るかは事前に分かりづらかった。" />
       </div>
 
       <div className="not-prose text-xs text-muted border border-border rounded-md p-4 my-6 leading-relaxed">
@@ -357,8 +359,83 @@ export default function Page() {
         （<a href="https://agri.mynavi.jp/2025_03_20_303239/" target="_blank" rel="noopener noreferrer" className="underline">マイナビ農業</a>）、
         <strong>調査後の営業がやや強い・調査で写真の提示がなかった</strong>
         （<a href="https://isekakou.com/media/housecleaning/shiroari110-voice/" target="_blank" rel="noopener noreferrer" className="underline">伊勢化工</a>）
-        といった声も挙がっています。公式の口コミ調査でも「最終的な金額が事前の情報より高くなった」「作業員の遅刻・連絡ミス」という不満が掲載されています。
+        といった声も挙がっています。公式の口コミ調査ページにも不満の声が掲載されています（次の章で原文を紹介）。
       </p>
+
+      <h2 id="official-voice">公式ページに載っている不満の声（原文）</h2>
+      <p>
+        運営会社の口コミ調査ページ（調査期間：2025年1月1日〜12月31日・対象498件）には、満足の声だけでなく、項目ごとに不満の声も掲載されています。
+        以下は2026年10月15日時点の掲載内容をそのまま引用したものです。
+      </p>
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse bg-white">
+          <thead>
+            <tr className="bg-muted-bg">
+              <th className="text-left p-3 border-b border-border w-36">項目（満足度）</th>
+              <th className="text-left p-3 border-b border-border">掲載されている不満の声（原文）</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["費用（4.6点）", "話しと違いガッカリ！"],
+              ["対応品質（4.6点）", "きちんとした説明等もなく対応がとても悪く感じた。"],
+              ["対応スピード（4.8点）", "出来るだけ早めの連絡をお願いします。"],
+              ["コールセンター（4.6点）", "夜中に連絡が来るのは若干やりすぎな気がした。"],
+            ].map(([k, v]) => (
+              <tr key={k} className="border-b border-border">
+                <td className="p-3 align-top font-bold">{k}</td>
+                <td className="p-3">「{v}」</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-xs text-muted">
+        ※ 出典：<a href="https://www.sharing-tech.co.jp/shiroari/shiroari110-reviews/" target="_blank" rel="noopener noreferrer" className="underline">シロアリ110番 公式・利用者の口コミ調査</a>（2026年10月15日確認）。
+        同ページは★4〜5を満足、★1〜3を不満として掲載しており、不満の声の件数や全体に占める割合は公開されていません。
+      </p>
+
+      <h2 id="kujo">「苦情が多い」「やばい」は本当？</h2>
+      <p>
+        「シロアリ110番 苦情」「やばい」といった検索もされていますが、<strong>シロアリ110番だけの苦情件数を公的機関が公表したデータは、当サイトでは確認できませんでした</strong>（2026年10月15日時点）。
+        公開されている情報から言えるのは次の3点です。
+      </p>
+      <ul>
+        <li>運営会社の自社調査（498件）の総合満足度は4.7点だが、同じページに「話しと違いガッカリ！」などの不満の声も載っている</li>
+        <li>第三者の記事では「加盟店による差」「繁忙期の待ち時間」「調査後の営業」が指摘されている</li>
+        <li>施工・契約・保証の当事者は加盟店（利用規約第8条）なので、体験の良し悪しは担当した加盟店に左右される</li>
+      </ul>
+      <p>
+        つまり「サービス全体が危ない」という根拠は見当たらない一方、<strong>来る加盟店しだいで体験が変わる</strong>のが実態です。
+        見積書の項目・保証の書面・施工範囲を確認し、納得できなければその場で契約しないことが一番の対策になります。
+      </p>
+
+      <h2 id="source">口コミ情報の見方（出典ごとの特徴）</h2>
+      <p>シロアリ110番の口コミを調べると、出典の性質が違う情報が混ざっています。読むときは次の違いを意識すると判断を誤りにくくなります。</p>
+      <div className="not-prose overflow-x-auto my-6">
+        <table className="w-full text-sm border-collapse bg-white">
+          <thead>
+            <tr className="bg-muted-bg">
+              <th className="text-left p-3 border-b border-border w-40">出典の種類</th>
+              <th className="text-left p-3 border-b border-border">特徴・注意点</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-border">
+              <td className="p-3 align-top font-bold">公式の口コミ調査</td>
+              <td className="p-3">件数（498件）・調査期間・項目別の点数が公開されている。ただし運営会社自身の調査で、不満の声の割合は非公開。</td>
+            </tr>
+            <tr className="border-b border-border">
+              <td className="p-3 align-top font-bold">第三者メディアの記事</td>
+              <td className="p-3">悪い口コミや注意点にも触れていることが多い。一方で、申し込みリンクが広告（アフィリエイト）になっている記事もあり、口コミの投稿元・件数が書かれていない場合がある。</td>
+            </tr>
+            <tr className="border-b border-border">
+              <td className="p-3 align-top font-bold">当サイト（本記事）</td>
+              <td className="p-3">本記事にも広告（PR）リンクを含みます。口コミは上記の公開情報の要点をまとめたもので、独自に集めた口コミや点数は掲載していません。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2 id="merit">口コミからわかったメリット</h2>
       <h3>1. 料金が明朗で相場より安い傾向</h3>
@@ -410,6 +487,13 @@ export default function Page() {
         <li><strong>施工</strong>：駆除・予防作業を実施。床下の状況を写真で共有してくれる場合も。</li>
         <li><strong>支払い・アフター</strong>：支払いは施工後（カードは一部加盟店で不可）。保証は施工した加盟店による5年間保証（条件は加盟店で異なる場合あり）。</li>
       </ol>
+
+      <h2 id="trouble">トラブルになったときの相談先</h2>
+      <p>
+        利用規約上、契約・苦情・キャンセルの窓口は<strong>施工した加盟店</strong>です。まずは見積書・契約書・保証書を手元に用意し、加盟店に連絡しましょう。
+        話し合いで解決しない場合は、消費者庁の<strong>「消費者ホットライン」188</strong>に電話すると、最寄りの消費生活センターなどの相談窓口を案内してもらえます
+        （<a href="https://www.caa.go.jp/policies/policy/local_cooperation/local_consumer_administration/hotline/" target="_blank" rel="noopener noreferrer" className="underline">消費者庁・消費者ホットライン</a>、2026年10月15日確認）。
+      </p>
 
       <h2 id="faq">よくある質問</h2>
       <FAQ items={faqs} />
