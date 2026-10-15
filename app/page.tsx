@@ -270,7 +270,7 @@ export default function Home() {
             <PhoneCTA phone="0120-987-282" label="ハウスプロテクトに電話" />
           </div>
           <p className="text-white/55 text-[10px] mt-6">
-            ※業者の対応エリア・料金は2026-05-28時点の公式サイト確認情報です。最新情報は各公式をご確認ください。
+            ※業者の対応エリア・料金は各業者カードに記載の確認日時点の公式サイト情報です。最新情報は各公式をご確認ください。
           </p>
         </div>
       </section>
