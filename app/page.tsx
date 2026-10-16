@@ -16,12 +16,12 @@ const faqs: FaqItem[] = [
   {
     question: "シロアリ駆除の費用はいくらかかりますか？",
     answer:
-      "シロアリ駆除は工法と床面積で価格が変わります。バリア工法は1坪あたり7,000円〜10,000円が中央値で、30坪の住宅で21〜30万円前後が一般的なレンジです。シロアリ110番では公式に1㎡あたり1,320円（税込）・66㎡以下は一律88,000円（税込）と料金表示されており、被害の程度・床下構造によって変動します。バリア工法は5年で更新、ベイト工法は年間契約型のため、5年間のTCO（総保有コスト）で比較するのが安全です。",
+      "シロアリ駆除は工法と床面積で価格が変わります。バリア工法は1坪あたり7,000円〜10,000円が中央値で、30坪の住宅で21〜30万円前後が一般的な目安です。シロアリ110番では公式に1㎡あたり1,320円（税込）・66㎡以下は一律88,000円（税込）と料金表示されており、被害の程度・床下構造によって変動します。バリア工法は5年で更新、ベイト工法は年間契約型のため、5年間のTCO（総費用）で比較することをおすすめします。",
   },
   {
     question: "羽アリを見つけたらすぐに駆除すべきですか？",
     answer:
-      "黒っぽい羽アリの飛来は、シロアリかクロアリかで対応が大きく変わります。シロアリの羽アリは触角がまっすぐで腹部にくびれがなく、4枚の羽が同じ大きさです。シロアリと判別された場合は群飛から数日以内に巣の活動が活発化しているサインで、早めに専門業者の床下点検を依頼するのが安全です。",
+      "黒っぽい羽アリの飛来は、シロアリかクロアリかで対応が大きく変わります。シロアリの羽アリは触角がまっすぐで腹部にくびれがなく、4枚の羽が同じ大きさです。シロアリと判別された場合は巣の活動が活発になっているサインのため、早めに専門業者へ床下点検を依頼することをおすすめします。",
   },
   {
     question: "シロアリ駆除に火災保険は使えますか？",
@@ -31,12 +31,12 @@ const faqs: FaqItem[] = [
   {
     question: "シロアリ駆除の補助金は出ますか？",
     answer:
-      "シロアリ駆除単独での補助金は限定的ですが、市町村の住宅リフォーム補助制度の一部としてシロアリ防除工事が対象になるケースがあります。「改修工事を伴う場合のみ対象」「対象外」など扱いは自治体で分かれるため、お住まいの市区町村の補助金の対象工事一覧と担当窓口で確認してください。",
+      "シロアリ駆除のみを対象とした補助金は多くありませんが、市町村の住宅リフォーム補助制度の一部としてシロアリ防除工事が対象になるケースがあります。「改修工事を伴う場合のみ対象」「対象外」など扱いは自治体で分かれるため、お住まいの市区町村の補助金の対象工事一覧と担当窓口で確認してください。",
   },
   {
     question: "中古住宅を買う前にシロアリ点検をすべきですか？",
     answer:
-      "中古住宅の購入前に、ホームインスペクション（住宅診断）とあわせてシロアリ床下点検を実施するのが安全です。既存住宅瑕疵保険の付帯条件として防蟻処理が求められる場合もあるため、不動産売買契約前のタイミングで売主・仲介業者と協議し、現況確認を済ませてから契約に進むことをおすすめします。",
+      "中古住宅の購入前には、ホームインスペクション（住宅診断）とあわせてシロアリの床下点検を実施することをおすすめします。既存住宅瑕疵保険の付帯条件として防蟻処理が求められる場合もあるため、不動産売買契約前のタイミングで売主・仲介業者と協議し、現況確認を済ませてから契約に進むことをおすすめします。",
   },
 ];
 
@@ -49,13 +49,13 @@ const persona = [
   },
   {
     title: "業者の選び方がわからない方",
-    desc: "公益社団法人日本しろあり対策協会の加盟業者を中心に、保証期間・施工方式・対応エリアで中立比較しています。",
+    desc: "公益社団法人日本しろあり対策協会の加盟業者を中心に、保証期間・施工方式・対応エリアを中立的な立場で比較しています。",
     link: "/articles/shiroari-gyousha-erabikata/",
     cta: "業者の選び方を見る",
   },
   {
     title: "中古住宅を購入する方",
-    desc: "購入前のインスペクション、既存住宅瑕疵保険の防蟻処理要件などを整理。中古戸建ての安全な購入手順を解説します。",
+    desc: "購入前のインスペクションや既存住宅瑕疵保険の防蟻処理要件を整理し、中古戸建てを購入する際の手順をご説明します。",
     link: "/articles/chuuko-juutaku-inspection/",
     cta: "インスペクションを確認する",
   },
@@ -79,12 +79,12 @@ export default function Home() {
             Shiroari Expert Navi 2026
           </p>
           <h1 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-5">
-            シロアリ駆除を、
+            シロアリ駆除業者を
             <br />
-            <span className="text-accent-light">工法と保証</span>で選ぶ。
+            <span className="text-accent-light">工法と保証</span>で比較する
           </h1>
           <p className="text-white/85 text-base md:text-lg leading-relaxed mb-8 max-w-2xl">
-            バリア工法とベイト工法の5年TCO比較、火災保険の適用条件、中古住宅のインスペクション連動まで、シロアリ駆除で本当に必要な情報を中立的に整理しました。
+            当サイトでは、バリア工法とベイト工法の5年TCO（総費用）比較、火災保険の適用条件、中古住宅のインスペクションとの関係など、シロアリ駆除の検討に必要な情報を中立的な立場で掲載しています。
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <CTAButton
@@ -98,7 +98,7 @@ export default function Home() {
               variant="outline"
               className="bg-white/10 text-white border-white/40 hover:bg-white/20"
             >
-              駆除費用と5年TCOを確認
+              駆除費用と5年TCOを見る
             </CTAButton>
           </div>
         </div>
@@ -118,11 +118,11 @@ export default function Home() {
             </div>
             <div className="flex items-start gap-2">
               <span className="text-accent font-bold">03</span>
-              <p>47都道府県の補助金確認リスト</p>
+              <p>47都道府県の補助金の確認先を掲載</p>
             </div>
             <div className="flex items-start gap-2">
               <span className="text-accent font-bold">04</span>
-              <p>バリア工法・ベイト工法の中立比較</p>
+              <p>バリア工法・ベイト工法を中立的に比較</p>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
           シロアリ駆除おすすめ業者ランキング
         </h2>
         <p className="text-muted text-sm text-center mb-8">
-          対応エリア・保証期間・施工方式の3軸で厳選した、公式情報を確認済みの専門業者です
+          対応エリア・保証期間・施工方式の3つの観点で選定し、公式情報を確認した業者を掲載しています
         </p>
         <RankingTable providers={top} />
         <div className="text-center mt-8">
@@ -154,7 +154,7 @@ export default function Home() {
             主要6社の対応エリア・保証 一覧
           </h2>
           <p className="text-muted text-sm text-center mb-8">
-            気になる業者を素早く比較できます
+            各社の対応エリア・保証・電話受付を一覧で比較できます
           </p>
           <ComparisonTable providers={PROVIDERS} />
         </div>
@@ -163,10 +163,10 @@ export default function Home() {
       {/* Persona */}
       <section className="max-w-5xl mx-auto px-4 py-14">
         <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-dark mb-2 text-center">
-          あなたの状況から、必要な記事へ
+          状況別の記事のご案内
         </h2>
         <p className="text-muted text-sm text-center mb-8">
-          被害の進行度や知りたい情報に合わせてご案内します
+          被害の状況や知りたい内容に応じて、関連する記事をご案内します
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {persona.map((p) => (
@@ -226,10 +226,10 @@ export default function Home() {
       {/* Subsidy summary */}
       <section className="max-w-5xl mx-auto px-4 py-14">
         <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-dark mb-2 text-center">
-          47都道府県の補助金 確認マップ
+          47都道府県の補助金の確認先
         </h2>
         <p className="text-muted text-sm text-center mb-8">
-          シロアリ防除関連の助成は市区町村ごとに制度が異なるため、地域の窓口を一覧で確認できます
+          シロアリ防除に関する助成は市区町村ごとに制度が異なるため、地域ごとの確認先を一覧で掲載しています
         </p>
         <RegionList variant="summary" />
         <div className="text-center mt-8">
@@ -251,12 +251,12 @@ export default function Home() {
       <section className="bg-primary text-white py-14">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
-            まずは現地調査・見積もり無料の業者へ
+            現地調査・見積もりが無料の業者にご相談ください
           </h2>
           <p className="text-white/85 mb-8 text-sm md:text-base leading-relaxed">
-            無理な自己駆除では再発リスクが残ります。
+            ご自身での駆除では、再発のおそれが残る場合があります。
             <br className="hidden md:inline" />
-            無料相談で被害状況を共有することからはじめましょう。
+            無料相談の際に、被害の状況をお伝えください。
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <CTAButton
@@ -270,7 +270,7 @@ export default function Home() {
             <PhoneCTA phone="0120-987-282" label="ハウスプロテクトに電話" />
           </div>
           <p className="text-white/55 text-[10px] mt-6">
-            ※業者の対応エリア・料金は各業者カードに記載の確認日時点の公式サイト情報です。最新情報は各公式をご確認ください。
+            ※業者の対応エリア・料金は、各業者カードに記載した確認日時点の公式サイトの情報です。最新情報は、各社の公式サイトにてご確認ください。
           </p>
         </div>
       </section>

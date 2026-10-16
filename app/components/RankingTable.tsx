@@ -81,7 +81,7 @@ export function RankingTable({ providers, showRank = true }: Props) {
               )}
             </div>
             <p className="text-[10px] text-muted mt-3">
-              ※情報は{p.sourceConfirmed}時点。最新の対応エリア・料金は公式サイトでご確認ください。
+              ※{p.sourceConfirmed}時点で公式サイトにて確認した情報です。最新の対応エリア・料金は、公式サイトにてご確認ください。
             </p>
           </div>
         </article>

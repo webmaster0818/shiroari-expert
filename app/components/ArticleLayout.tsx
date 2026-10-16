@@ -84,11 +84,11 @@ function ArticleBottomCta() {
   return (
     <section className="mt-12 bg-muted-bg border border-border rounded-md p-6">
       <h2 className="font-display text-lg md:text-xl font-bold mb-2 text-primary-dark text-center">
-        シロアリ被害の相談は、専門業者の現地調査から
+        シロアリ被害のご相談は専門業者の現地調査をご利用ください
       </h2>
       <p className="text-sm text-foreground/80 text-center mb-5 leading-relaxed">
-        本格被害は床下構造を熟知した専門業者の領域です。<br className="hidden md:inline" />
-        まずは現地調査・見積もり無料の専門業者に状況を相談しましょう。
+        床下や構造材に及ぶ被害への対応は、床下構造に精通した専門業者への依頼をおすすめします。<br className="hidden md:inline" />
+        現地調査・見積もりが無料の専門業者に、被害の状況をご相談ください。
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
         {top.map((p) => (

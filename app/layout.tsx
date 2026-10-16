@@ -98,7 +98,7 @@ function SiteHeader() {
         >
           <span className="block text-base md:text-lg">{SITE_SHORT}</span>
           <span className="block text-[10px] text-muted font-sans tracking-wider">
-            バリア工法・ベイト工法を中立比較する専門ガイド
+            バリア工法・ベイト工法を中立的に比較する専門ガイド
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-foreground/80">
@@ -182,7 +182,7 @@ function SiteHeader() {
               href="/articles/hane-ari-mikiwake/"
               className="block px-4 py-2 text-sm hover:bg-muted-bg transition-colors"
             >
-              羽アリ見分け方
+              羽アリの見分け方
             </Link>
             <Link
               href="/articles/shiroari-higai-shoujou/"
@@ -212,7 +212,7 @@ function SiteHeader() {
               href="/articles/shiroari-hojo-kin-zenkoku/"
               className="block px-4 py-2 text-sm hover:bg-muted-bg transition-colors"
             >
-              47都道府県補助金
+              47都道府県の補助金
             </Link>
           </div>
         </details>
@@ -231,9 +231,9 @@ function SiteFooter() {
               {SITE_NAME}
             </p>
             <p className="text-sm text-white/70 leading-relaxed">
-              バリア工法とベイト工法を中立比較した専門ガイド。
+              バリア工法とベイト工法を中立的な立場で比較する専門ガイドです。
               <br />
-              5年TCO・火災保険・インスペクション連動まで、シロアリ駆除に本当に必要な情報を集約しました。
+              5年TCO（総費用）、火災保険、中古住宅のインスペクションなど、シロアリ駆除の検討に必要な情報を掲載しています。
             </p>
           </div>
           <div>
@@ -260,7 +260,7 @@ function SiteFooter() {
                   href="/articles/shiroari-hojo-kin-zenkoku/"
                   className="hover:text-white transition-colors"
                 >
-                  47都道府県補助金一覧
+                  47都道府県の補助金一覧
                 </Link>
               </li>
               <li>

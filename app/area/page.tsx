@@ -28,10 +28,10 @@ export default function Page() {
           エリア別シロアリ駆除業者の比較
         </h1>
         <p className="mt-4 leading-relaxed">
-          シロアリ対策は、住んでいる地域で<strong>対象になる種類が変わります</strong>。
-          ヤマトシロアリは北海道北部を除く日本全土に分布しますが、被害の進み方が速いイエシロアリは
-          「神奈川県以西の海岸線に沿った温暖な地域と千葉県の一部、南西諸島、小笠原諸島」に限られます。
-          羽アリが出る時期も、沖縄は2月、東北・北海道は6月ごろと差があります。
+          シロアリ対策は、お住まいの地域によって<strong>対象となる種類が異なります</strong>。
+          ヤマトシロアリは北海道北部を除く日本全土に分布していますが、被害の進行が速いイエシロアリの分布は
+          「神奈川県以西の海岸線に沿った温暖な地域と千葉県の一部、南西諸島、小笠原諸島」に限られています。
+          羽アリが発生する時期も、沖縄は2月、東北・北海道は6月ごろと地域により異なります。
         </p>
         <p className="mt-3 text-xs text-foreground/60">
           出典：公益社団法人 日本しろあり対策協会
@@ -42,7 +42,7 @@ export default function Page() {
           <a className="underline ml-1" href="https://www.hakutaikyo.or.jp/faq/2278.html" target="_blank" rel="noopener noreferrer">
             羽アリが飛ぶ時期
           </a>
-          （2026-09-17 確認）
+          （2026年9月17日確認）
         </p>
 
         {REGIONS.map((r) => {

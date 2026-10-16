@@ -53,7 +53,7 @@ export function CTAButton({
 
 export function PhoneCTA({
   phone,
-  label = "今すぐ電話で相談",
+  label = "電話で相談する",
 }: {
   phone: string;
   label?: string;

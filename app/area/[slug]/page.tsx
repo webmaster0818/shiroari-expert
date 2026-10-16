@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     : `${a.pref}のシロアリ駆除業者を比較｜対象種と群飛時期・費用の目安`;
   return {
     title,
-    description: `${a.pref}のシロアリ駆除を、対象になるシロアリの種類・羽アリが出る時期・費用の考え方・実在業者の対応エリアで整理しました。${a.pref}で注意すべき点と、見積もり前に確認することをまとめています。`,
+    description: `${a.pref}のシロアリ駆除を、対象になるシロアリの種類・羽アリが出る時期・費用の考え方・実在業者の対応エリアで整理しました。${a.pref}で注意すべき点と、見積もり前の確認事項をまとめています。`,
     alternates: { canonical: `${SITE_URL}/area/${a.slug}/` },
   };
 }
@@ -76,12 +76,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
   const faqs: FaqItem[] = [
     {
-      question: `${a.pref}で気をつけるシロアリの種類は？`,
+      question: `${a.pref}で注意すべきシロアリの種類は？`,
       answer:
         a.ie === "yes"
           ? `ヤマトシロアリに加えてイエシロアリが対象になります。イエシロアリは公益社団法人 日本しろあり対策協会が「神奈川県以西の海岸線に沿った温暖な地域」を分布として挙げており、${a.pref}はここに含まれます。${a.daikoku ? "さらに奄美大島以南ではダイコクシロアリも対象です。" : ""}`
           : a.ie === "check"
-          ? `基本はヤマトシロアリです。イエシロアリについては${a.ieNote}`
+          ? `基本はヤマトシロアリです。${a.ieNote}`
           : `ヤマトシロアリが対象です。イエシロアリの分布は「神奈川県以西の海岸線に沿った温暖な地域と千葉県の一部、南西諸島、小笠原諸島」とされており、${a.pref}は含まれません。`,
     },
     {
@@ -89,19 +89,19 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       answer:
         `ヤマトシロアリの群飛は${a.yamatoSwarm}です（協会の記載では4〜5月の昼間、ただし沖縄は2月、東北・北海道は6月ごろ）。` +
         (a.ie === "none"
-          ? "イエシロアリの分布域ではないため、夜に電灯へ飛来するタイプの群飛は基本的に想定しません。"
-          : "イエシロアリは6〜7月の夜に群飛し、電灯に飛来します。夜に羽アリが灯りへ集まる場合はイエシロアリを疑ってください。"),
+          ? "イエシロアリの分布域ではないため、夜間に電灯へ飛来する種類の群飛は、基本的に想定されません。"
+          : "イエシロアリは6〜7月の夜に群飛し、電灯に飛来します。夜間に羽アリが照明に集まる場合は、イエシロアリの可能性があります。"),
     },
     {
       question: `${a.pref}に補助金はありますか？`,
       answer:
         (subsidy?.note ?? "自治体により制度の有無が異なります。") +
-        " 制度の有無・金額・対象工事は自治体ごとに異なり、年度で変わります。申請前に必ずお住まいの市区町村の公式窓口で確認してください。",
+        " 制度の有無・金額・対象工事は自治体ごとに異なり、年度によっても変わります。申請前に、お住まいの市区町村の窓口にてご確認ください。",
     },
     {
-      question: "見積もりは何社から取るべきですか？",
+      question: "見積もりは何社から取ればよいですか？",
       answer:
-        "最低2社です。同じ床面積でも工法（バリア/ベイト）・薬剤・保証年数で金額が変わるため、1社だけでは高いのか安いのか判断できません。見積書では『追加費用が発生する条件』『保証の範囲』『床下に進入できない箇所の扱い』を必ず確認してください。",
+        "2社以上から取ることをおすすめします。同じ床面積でも工法（バリア/ベイト）・薬剤・保証年数によって金額が変わるため、1社のみでは金額の妥当性を判断しにくいためです。見積書では「追加費用が発生する条件」「保証の範囲」「床下に進入できない箇所の扱い」をご確認ください。",
     },
   ];
 
@@ -117,19 +117,19 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           {a.pref}のシロアリ駆除業者を比較
         </h1>
 
-        {/* 結論を先に出す。県ごとに変わるのはここ */}
+        {/* 県ごとに変わる要点 */}
         <div className="mt-6 border border-border rounded-sm bg-muted-bg p-4 text-sm leading-relaxed">
-          <p className="font-bold text-primary-dark">{a.pref}で押さえる3点</p>
+          <p className="font-bold text-primary-dark">{a.pref}のシロアリ対策の要点</p>
           <ul className="mt-3 space-y-2">
             <li>
-              <span className="font-bold">対象になる種類</span>：ヤマトシロアリ
+              <span className="font-bold">対象となる種類</span>：ヤマトシロアリ
               {a.ie === "yes" && "／イエシロアリ"}
               {a.daikoku && "／ダイコクシロアリ（奄美大島以南）"}
               <br />
               <span className="text-foreground/70">イエシロアリ：{ieLabel}</span>
             </li>
             <li>
-              <span className="font-bold">羽アリが出る時期</span>：ヤマトシロアリ＝{a.yamatoSwarm}
+              <span className="font-bold">羽アリが発生する時期</span>：ヤマトシロアリ＝{a.yamatoSwarm}
               {a.ie !== "none" && "／イエシロアリ＝6〜7月の夜（電灯に飛来）"}
             </li>
             <li>
@@ -139,34 +139,36 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         </div>
 
         <h2 className="mt-10 text-xl font-bold text-primary-dark">
-          {a.pref}で対象になるシロアリ
+          {a.pref}で対象となるシロアリ
         </h2>
         <p className="mt-3 leading-relaxed">{a.ieNote}</p>
         <p className="mt-3 leading-relaxed">
-          ヤマトシロアリは「北海道北部を除く日本全土」に分布するため、{a.pref}でも対象になります。
+          ヤマトシロアリは「北海道北部を除く日本全土」に分布するため、{a.pref}でも対象となります。
           {a.ie === "yes"
-            ? "イエシロアリは巣の規模が大きく被害の進み方が速いとされるため、分布域では点検の優先度が上がります。"
-            : "イエシロアリの分布域ではないぶん、対策はヤマトシロアリに絞って考えられます。"}
+            ? "イエシロアリは巣の規模が大きく、被害の進行が速いとされるため、分布域では早めの点検をおすすめします。"
+            : a.ie === "check"
+            ? "イエシロアリの分布域にあたるかは地域により異なるため、点検時に種類を確認することをおすすめします。"
+            : "イエシロアリの分布域ではないため、ヤマトシロアリを対象とした対策が中心となります。"}
         </p>
         <p className="mt-3 text-xs text-foreground/60">
           出典：公益社団法人 日本しろあり対策協会「わが国で建築物を加害するシロアリの種類と分布」
           <a className="underline ml-1" href="https://www.hakutaikyo.or.jp/faq/1813.html" target="_blank" rel="noopener noreferrer">
             hakutaikyo.or.jp
           </a>
-          （2026-09-17 確認）
+          （2026年9月17日確認）
         </p>
 
         <h2 className="mt-10 text-xl font-bold text-primary-dark">
-          羽アリを見たときの判断（{a.pref}の時期）
+          羽アリを見つけた場合の判断（{a.pref}の発生時期）
         </h2>
         <p className="mt-3 leading-relaxed">
           {a.pref}でヤマトシロアリの群飛が見られるのは{a.yamatoSwarm}です。
           {a.ie === "none"
-            ? "昼間に羽アリが出た場合はヤマトシロアリの可能性があります。夜に灯りへ集まる羽アリはクロアリなど別の虫であることが多く、まず種類の判別が先です。"
-            : "これに加えてイエシロアリが6〜7月の夜に群飛し、電灯に飛来します。昼か夜かで種類の見当がつくため、見つけた時間帯を業者に伝えてください。"}
+            ? "昼間に羽アリが発生した場合は、ヤマトシロアリの可能性があります。夜間に照明へ集まる羽アリはクロアリなど別の虫であることが多いため、まず種類を判別することが重要です。"
+            : "これに加えて、イエシロアリが6〜7月の夜間に群飛し、電灯に飛来します。昼か夜かによって種類をある程度推定できるため、見つけた時間帯を業者にお伝えください。"}
         </p>
         <p className="mt-3 leading-relaxed">
-          羽アリはシロアリかクロアリかで対応が変わります。判別の手順は
+          羽アリは、シロアリかクロアリかによって対応が異なります。判別の手順は
           <Link className="text-primary underline" href="/articles/hane-ari-mikiwake/">羽アリの見分け方</Link>
           にまとめています。
         </p>
@@ -175,9 +177,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           {a.pref}に対応している業者の比較
         </h2>
         <p className="mt-3 leading-relaxed text-sm">
-          ⚠️ 下の対応エリアは<strong>各社の公式表記</strong>をそのまま載せています。
-          全国対応をうたう会社でも、実際の施工は地域の加盟店が行う場合があり、
-          {a.pref}内のどこまで対応できるかは問い合わせ時に確認が必要です。
+          以下の対応エリアは、<strong>各社の公式表記</strong>をそのまま掲載しています。
+          全国対応としている会社でも、実際の施工は地域の加盟店が行う場合があるため、
+          {a.pref}内の対応範囲はお問い合わせの際にご確認ください。
         </p>
         <div className="mt-4">
           <ComparisonTable providers={providers} />
@@ -191,9 +193,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
         <h2 className="mt-10 text-xl font-bold text-primary-dark">費用の考え方</h2>
         <p className="mt-3 leading-relaxed">
-          費用は床面積と工法で決まるため、{a.pref}だから高い・安いという地域差より、
-          自宅の構造と被害の進み方のほうが効きます。相場の内訳と、
-          バリア工法・ベイト工法を5年の総額で比べた結果は
+          費用は床面積と工法によって決まるため、地域による差よりも、
+          住宅の構造や被害の進行状況による影響が大きくなります。相場の内訳と、
+          バリア工法・ベイト工法を5年間の総額で比較した結果は
           <Link className="text-primary underline" href="/articles/shiroari-kuchu-hiyou/">シロアリ駆除費用の相場</Link>
           で整理しています。
         </p>
@@ -201,8 +203,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <h2 className="mt-10 text-xl font-bold text-primary-dark">{a.pref}の補助金</h2>
         <p className="mt-3 leading-relaxed">{subsidy?.note ?? "自治体により制度の有無が異なります。"}</p>
         <p className="mt-3 leading-relaxed text-sm text-foreground/70">
-          ⚠️ 補助金は<strong>市区町村ごと・年度ごと</strong>に変わります。ここでは有無を断定していません。
-          申請前に必ずお住まいの自治体の公式窓口で確認してください。全国の状況は
+          補助金の制度は<strong>市区町村ごと・年度ごと</strong>に異なるため、当ページでは制度の有無を断定していません。
+          申請前に、お住まいの自治体の窓口にてご確認ください。全国の状況は
           <Link className="text-primary underline" href="/articles/shiroari-hojo-kin-zenkoku/">シロアリ駆除の補助金</Link>
           にまとめています。
         </p>
