@@ -115,6 +115,10 @@ export default function Page() {
           <tr><td>適合住宅</td><td>床下進入可能な戸建て</td><td>ベタ基礎・狭小床下にも対応可</td></tr>
         </tbody>
       </table>
+      <p>
+        各工法の仕組みと協会の仕様書上の位置付けは
+        <a href="/articles/shiroari-baria-beito/">バリア工法とベイト工法の違い</a>で詳しくご説明しています。
+      </p>
 
       <h2>予防処理の頻度と費用シミュレーション（30坪・20年間）</h2>
       <table>

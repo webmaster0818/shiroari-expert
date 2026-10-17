@@ -73,6 +73,10 @@ export default function Page() {
         前回の施工時期が分からない住宅や中古で取得した住宅は、年数を推測するよりも
         <Link href="/articles/shiroari-yukashita-tenken/">床下点検</Link>で現状を確認することをおすすめします。
       </p>
+      <p>
+        新築時・築5年前後・中古住宅・リフォーム時の段階ごとの確認事項は
+        <Link href="/articles/shiroari-chikunensu-meyasu/">築年数別のシロアリ対策</Link>にまとめています。
+      </p>
 
       <h2>群飛の前に点検を受けるメリット</h2>
       <p>
