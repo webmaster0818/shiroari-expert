@@ -82,9 +82,14 @@ export default function Page() {
         </thead>
         <tbody>
           <tr><td>バリア工法</td><td>21〜30万円</td><td>5年後の再施工で同額</td><td>21〜30万円（5年区切り）</td></tr>
-          <tr><td>ベイト工法</td><td>15〜25万円</td><td>年間2〜4万円のモニタリング</td><td>25〜45万円（年契約）</td></tr>
+          <tr><td>ベイト工法</td><td>業者・建物により異なる</td><td>年間2〜4万円のモニタリング</td><td>25〜45万円（年契約）</td></tr>
         </tbody>
       </table>
+      <p>
+        日本しろあり対策協会は「一般的にベイト工法のほうが費用がかかります」と回答しています（
+        <a href="https://www.hakutaikyo.or.jp/faq/2682.html" target="_blank" rel="noopener noreferrer">協会Q&amp;A</a>
+        ・2026年10月20日確認）。
+      </p>
       <p>
         ※上記は業界の公開情報をもとにした目安です。実際の見積もりは床下構造・被害規模で大きく変わるため、必ず現地調査後の正式見積もりで確認してください。
       </p>

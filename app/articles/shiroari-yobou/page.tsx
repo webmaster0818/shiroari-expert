@@ -108,13 +108,17 @@ export default function Page() {
           <tr><th>項目</th><th>バリア工法（予防）</th><th>ベイト工法（予防）</th></tr>
         </thead>
         <tbody>
-          <tr><td>初期費用</td><td>21〜30万円（30坪）</td><td>15〜25万円（30坪）</td></tr>
+          <tr><td>費用</td><td colSpan={2}>日本しろあり対策協会の回答は「一般的にベイト工法のほうが費用がかかります」。具体的な金額は業者・建物によって異なります</td></tr>
           <tr><td>運用形態</td><td>5年ごとの一括施工</td><td>年間モニタリング契約</td></tr>
           <tr><td>薬剤への配慮</td><td>床下散布のため家族・ペットへの影響を最小化</td><td>毒餌のみで散布なし</td></tr>
           <tr><td>監視体制</td><td>5年に1度の点検</td><td>定期モニタリングで早期発見</td></tr>
-          <tr><td>適合住宅</td><td>床下進入可能な戸建て</td><td>ベタ基礎・狭小床下にも対応可</td></tr>
         </tbody>
       </table>
+      <p className="text-sm">
+        出典：日本しろあり対策協会
+        <a href="https://www.hakutaikyo.or.jp/faq/2682.html" target="_blank" rel="noopener noreferrer">Q&amp;A「ベイト工法と薬剤の散布施工はどう違うのですか」</a>
+        （2026年10月20日確認）
+      </p>
       <p>
         各工法の仕組みと協会の仕様書上の位置付けは
         <a href="/articles/shiroari-baria-beito/">バリア工法とベイト工法の違い</a>で詳しくご説明しています。
