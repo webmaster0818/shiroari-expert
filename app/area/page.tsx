@@ -45,6 +45,23 @@ export default function Page() {
           （2026年9月17日確認）
         </p>
 
+        {/* 「沖縄 シロアリ」で /area/ が表示されるため、沖縄の答えと沖縄県ページへの導線を上に置く。事実は上の協会Q&A（areas.ts と同じ） */}
+        <div className="mt-6 border border-border rounded-sm bg-muted-bg p-4 text-sm leading-relaxed">
+          <p className="font-bold text-primary-dark">地域によって対策が変わる主な点</p>
+          <ul className="mt-3 space-y-2">
+            <li>
+              <span className="font-bold">沖縄県</span>：ヤマトシロアリに加えて、イエシロアリ（南西諸島が分布域）とダイコクシロアリ（奄美大島以南に分布）が対象です。ヤマトシロアリの羽アリは2月ごろの昼間、イエシロアリは6〜7月の夜に飛びます。
+              <Link className="text-primary underline ml-1" href="/area/okinawa/">沖縄県のシロアリ駆除業者の比較</Link>
+            </li>
+            <li>
+              <span className="font-bold">イエシロアリの分布域</span>：神奈川県以西の海岸線に沿った温暖な地域と千葉県の一部、南西諸島、小笠原諸島です。
+            </li>
+            <li>
+              <span className="font-bold">東北・北海道</span>：ヤマトシロアリの羽アリは6月ごろの昼間です（沖縄県・東北・北海道以外は4〜5月の昼間）。
+            </li>
+          </ul>
+        </div>
+
         {REGIONS.map((r) => {
           const items = AREAS.filter((a) => a.region === r);
           if (!items.length) return null;
