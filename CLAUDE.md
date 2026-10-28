@@ -69,3 +69,9 @@
 - /area/: 冒頭に沖縄県の対象種・羽アリ時期と /area/okinawa/（未インデックス）への導線（協会Q&A・既存の記載と同じ）。
 - 未対応: 本文の蟻道「幅5〜10mm」・jibun-de「3〜6ヶ月の忌避効果」などは出典なしのまま。
 - src 8c669f3 ／ deploy ad37815。precheck 全項目OK・可視差分2ページ・計測リンク 10→10・本番確認・Indexing OK。
+
+### 2026-10-28 「5年TCO」表記の言い換え（10/27 宣言・okina 回答なし）
+- 試算は 10/24 に削除済みなのに残っていた表記を「費用比較」「費用の比べ方」「駆除費用の相場と比べ方」に。出どころ: articles.ts（kuchu-hiyou の shortTitle・title・description）・site.ts・layout.tsx（ナビ・フッター）・ArticleLayout.tsx・page.tsx（TOP FAQ 最後の一文・紹介文・ボタン）・about・area/[slug]（「5年間の総額で比較した結果は」）。slug 不変。
+- html 件数: 5年TCO 1,094→0・TCO 1,106→0・「5年間の総」102→0・felmat 10→10。
+- 「1坪7,000〜10,000円が中央値」等の okina 判断待ちは未変更。
+- src 942b31f ／ deploy（次コミット）。precheck 全項目OK・可視差分74ページ全て置換由来・本番 TCO 0・Indexing 10本 OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-10-28/
