@@ -75,3 +75,10 @@
 - html 件数: 5年TCO 1,094→0・TCO 1,106→0・「5年間の総」102→0・felmat 10→10。
 - 「1坪7,000〜10,000円が中央値」等の okina 判断待ちは未変更。
 - src 942b31f ／ deploy 81aa1db。precheck 全項目OK・可視差分74ページ全て置換由来・本番 TCO 0・Indexing 10本 OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-10-28/
+
+### 2026-10-28 11時 okina「全部実行」A案（費用・補助金・約款・瑕疵保険）
+- 32 kuchu-hiyou: 「1坪7,000〜10,000円が中央値（30坪21〜30万円）」本文・FAQ、「年間モニタリング契約（年間2〜4万円程度）」の金額を削除。同じ値の TOP FAQ（費用）・kuchu-hiyou description（articles.ts）からも削除。未変更（報告のみ）: kuchu-hiyou 本文「業界全体での費用は21万円〜30万円が中心的な価格帯」・FAQ「30坪で20万円前後が中央値」、yobou FAQ「21〜30万円程度」、yukashita-tenken「5万〜10万円程度が中央値」、chuuko-juutaku-inspection 費用4か所。
+- 36 TOP FAQ（補助金）: 「リフォーム補助制度の一部としてシロアリ防除工事が対象になるケース」を削除。
+- 43 kasai-hoken: FAQ1「除外されているのが一般的」・前提ボックス「一般的な約款の傾向」・本文「約款上「対象外損害」…業界の標準的な扱い」の段落を削除。
+- 48 TOP FAQ（中古住宅）・記事カード: 「瑕疵保険で防蟻処理が求められる／防蟻処理要件」→ ハウスプラス住宅保証パンフ（2026/7/23版・10/28 再確認）どおり「引渡し前の検査（現場検査）合格が加入条件・虫食いは免責事由」。
+- src 2c4fb8c ／ deploy 6040584。precheck 全項目OK（71p）・可視差分3ページ（TOP・kuchu-hiyou・kasai-hoken）・felmat 10→10。記録 ~/.openclaw/workspace/growth/okina/shiroari-allA-2026-10-28/
