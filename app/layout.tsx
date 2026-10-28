@@ -176,7 +176,7 @@ function SiteHeader() {
               href="/articles/shiroari-kuchu-hiyou/"
               className="block px-4 py-2 text-sm hover:bg-muted-bg transition-colors"
             >
-              駆除費用・5年TCO
+              駆除費用の比べ方
             </Link>
             <Link
               href="/articles/hane-ari-mikiwake/"
@@ -233,7 +233,7 @@ function SiteFooter() {
             <p className="text-sm text-white/70 leading-relaxed">
               バリア工法とベイト工法を中立的な立場で比較する専門ガイドです。
               <br />
-              5年TCO（総費用）、火災保険、中古住宅のインスペクションなど、シロアリ駆除の検討に必要な情報を掲載しています。
+              駆除費用の比べ方、火災保険、中古住宅のインスペクションなど、シロアリ駆除の検討に必要な情報を掲載しています。
             </p>
           </div>
           <div>
@@ -252,7 +252,7 @@ function SiteFooter() {
                   href="/articles/shiroari-kuchu-hiyou/"
                   className="hover:text-white transition-colors"
                 >
-                  駆除費用と5年TCO
+                  駆除費用の相場と比べ方
                 </Link>
               </li>
               <li>

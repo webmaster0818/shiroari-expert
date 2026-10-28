@@ -195,7 +195,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <p className="mt-3 leading-relaxed">
           費用は床面積と工法によって決まるため、地域による差よりも、
           住宅の構造や被害の進行状況による影響が大きくなります。相場の内訳と、
-          バリア工法・ベイト工法を5年間の総額で比較した結果は
+          バリア工法・ベイト工法の費用の比べ方は
           <Link className="text-primary underline" href="/articles/shiroari-kuchu-hiyou/">シロアリ駆除費用の相場</Link>
           で整理しています。
         </p>

@@ -114,7 +114,7 @@ function ArticleBottomCta() {
 function RelatedArticles({ current }: { current: string }) {
   const related = [
     { slug: "shiroari-gyousha-erabikata", title: "シロアリ駆除業者の選び方" },
-    { slug: "shiroari-kuchu-hiyou", title: "駆除費用と5年TCO比較" },
+    { slug: "shiroari-kuchu-hiyou", title: "駆除費用の相場と比べ方" },
     { slug: "shiroari-jibun-de", title: "シロアリを自分で駆除する方法" },
     { slug: "hane-ari-mikiwake", title: "羽アリの見分け方" },
     { slug: "shiroari-higai-shoujou", title: "シロアリ被害の症状" },
