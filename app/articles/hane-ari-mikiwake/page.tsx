@@ -13,6 +13,11 @@ export const metadata: Metadata = {
 
 const faqs: FaqItem[] = [
   {
+    question: "シロアリの羽アリは白くないのですか？",
+    answer:
+      "白くありません。川崎市・秋田市の解説では、ヤマトシロアリの羽アリ（有翅虫）は体の大部分が黒褐色で、翅は暗褐色とされています。白っぽく見えるのは巣の中で暮らす働きアリ・兵アリで、体色は乳白色です。窓際などで見かける黒っぽい羽アリもシロアリの可能性があるため、触角・くびれ・翅の形で見分けてください。",
+  },
+  {
     question: "シロアリの羽アリとクロアリの羽アリはどう違いますか？",
     answer:
       "触角・くびれ・羽の3点で判別できます。シロアリは触角がまっすぐな数珠状、腹部にくびれがなく、4枚の羽が同じ大きさです。クロアリは触角がL字に曲がり、腹部に明確なくびれがあり、前後で羽の大きさが異なります。",
@@ -46,6 +51,15 @@ export default function Page() {
       <p>
         春から夏にかけて、窓際に黒っぽい羽のある虫が集まることがあります。これがシロアリの羽アリかクロアリの羽アリかによって、対応は大きく異なります。本記事では、<strong>触角・くびれ・羽の3点</strong>で判別する方法と、ヤマトシロアリ・イエシロアリ・アメリカカンザイシロアリの違いを整理します。
       </p>
+
+      <div className="notice-box">
+        <p className="font-bold text-primary-dark mb-1">結論：シロアリの羽アリは白くなく、黒褐色です</p>
+        <ul className="text-sm leading-relaxed mb-0">
+          <li><strong>羽アリの色</strong>：ヤマトシロアリの羽アリは体の大部分が黒褐色で、翅は暗褐色です（<a href="https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/siroari.pdf" target="_blank" rel="noopener noreferrer">川崎市「シロアリ」（PDF）</a>・<a href="https://www.city.akita.lg.jp/kurashi/kenko/1005367/1013033/1009997/1005527.html" target="_blank" rel="noopener noreferrer">秋田市「衛生害虫（シロアリ）」</a>）。</li>
+          <li><strong>白いのは巣の中の個体</strong>：働きアリ・兵アリは体色が乳白色で、通常は木材や土の中で生活しているため目に触れにくい個体です（<a href="https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/siroari.pdf" target="_blank" rel="noopener noreferrer">川崎市「シロアリ」（PDF）</a>）。</li>
+          <li><strong>見分け方</strong>：シロアリは触角がじゅず状、胴がずん胴、前後の翅がほぼ同じ大きさです。アリは触角が「く」の字形、胴がくびれ、前翅が後翅より大きくなります（<a href="https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/pet-eisei/pet-doubutsu/shiroari.html" target="_blank" rel="noopener noreferrer">中野区「シロアリについて」</a>・<a href="https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/siroari.pdf" target="_blank" rel="noopener noreferrer">川崎市「シロアリ」（PDF）</a>）。</li>
+        </ul>
+      </div>
 
       <h2>シロアリとクロアリの基本判別</h2>
       <p>
