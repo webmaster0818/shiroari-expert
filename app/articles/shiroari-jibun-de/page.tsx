@@ -13,6 +13,11 @@ export const metadata: Metadata = {
 
 const faqs: FaqItem[] = [
   {
+    question: "シロアリ駆除は自分でできますか？",
+    answer:
+      "這い出てきた羽アリは市販の殺虫剤で駆除できますが、それで全てのシロアリがいなくなるわけではなく、木材内部に残った働きアリによる加害は続きます。駆除には十分な知識や機材が必要なため、専門の業者への依頼が勧められています（秋田市「衛生害虫（シロアリ）」）。東京都保健医療局も「個人で対策するのは困難」として専門業者への依頼を勧めています。ご自身でできるのは、床下の通気を良くして乾燥させる、廃材を置きっぱなしにしないといった予防です。",
+  },
+  {
     question: "ホームセンターのシロアリ用薬剤で十分ですか？",
     answer:
       "市販薬剤は羽アリの飛来や限定的な被害には有効ですが、床下や柱まで進行した本格被害には不十分です。市販品は濃度・浸透力が業務用と異なり、巣ごとの駆除はできません。被害規模が「点」を超えて「面」になっている場合は、専門業者の床下処理が必要です。",
@@ -46,6 +51,16 @@ export default function Page() {
       <p>
         シロアリは住宅構造材を加害する害虫ですが、被害規模によっては自分で対応できる範囲もあります。本記事では、<strong>DIYで対応できる範囲と、専門業者に依頼すべき目安</strong>を区分し、市販薬剤の正しい使い方と注意点をご説明します。
       </p>
+
+      <div className="notice-box">
+        <p className="font-bold text-primary-dark mb-1">結論：自分で駆除できるのは羽アリまでです。巣（木材内部）の駆除は専門業者へご相談ください</p>
+        <ul className="text-sm leading-relaxed mb-0">
+          <li><strong>市販の殺虫剤でできること</strong>：飛び立つために這い出てきた羽アリは市販の殺虫剤で駆除できます。ただし、木材内部には働きアリが残り、加害は続きます（<a href="https://www.city.akita.lg.jp/kurashi/kenko/1005367/1013033/1009997/1005527.html" target="_blank" rel="noopener noreferrer">秋田市「衛生害虫（シロアリ）」</a>）。</li>
+          <li><strong>駆除は業者へ</strong>：秋田市は「十分な知識や機材等が必要」として専門業者への依頼を、東京都保健医療局は「個人で対策するのは困難」として専門業者への依頼を、川崎市は発見したら専門の駆除業者への相談を勧めています（<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/shiroari" target="_blank" rel="noopener noreferrer">東京都保健医療局「シロアリ」</a>・<a href="https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/siroari.pdf" target="_blank" rel="noopener noreferrer">川崎市「シロアリ」（PDF）</a>）。</li>
+          <li><strong>自分でできる予防</strong>：床下の通気を良くして乾燥させる、建物の周辺に木片・廃材・段ボールを置かない、浴室・トイレの水漏れや雨どいの破損を放置しない、床下の換気口の前に物を置かない（秋田市・川崎市・東京都保健医療局）。</li>
+          <li><strong>業者を選ぶとき</strong>：工法は業者によって異なり、アメリカカンザイシロアリに対応していない業者もあります。複数の業者から見積もりを取り、最終的な費用と施工後の保証期間を事前に確認してください（<a href="https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/pet-eisei/pet-doubutsu/shiroari.html" target="_blank" rel="noopener noreferrer">中野区「シロアリについて」</a>）。</li>
+        </ul>
+      </div>
 
       <div className="warning-box">
         <p className="font-bold text-danger mb-1">構造材に及ぶ被害はご自身での施工に適しません</p>
