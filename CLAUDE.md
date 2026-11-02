@@ -97,3 +97,8 @@
 - 10/17〜10/30 修正済みでない表示ありページは gyousha-erabikata のみ。title・description・冒頭の結論ボックス・FAQ1 差し替え・FAQ「突然訪問してきた業者に床下の点検を勧められたら」追加（5→6）。根拠は中野区「シロアリについて」（2026-06-22更新）・国民生活センター 点検商法（2018/3/1）・同「クーリング・オフ」・消費者庁 188（10/31 確認）。協会サイトは 10/31 も公開停止中。
 - 未変更（出典なし）: 本文「業界標準は5年保証」「100%自社施工を公式に明記」「2026年5月時点で確認」・FAQ「多くの業者が無料を明記」・「協会の施工基準に沿って施工する義務」。
 - src edf771e ／ deploy d630989。precheck 全項目OK・可視差分2ページ（対象・TOP カード）・felmat 10→10・本番確認（09:28 反映）・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-10-31/
+
+### 2026-11-02 中古住宅記事の出典なし費用を削除（11/1 宣言・okina 回答なし）
+- chuuko-juutaku-inspection: 費用表4セル・FAQ 2値・まとめ「数万円」を削除し「各社にお見積りをご確認ください」等に。h2「費用の目安」→「費用の確認のしかた」。sitemap lastmod 11-02。
+- 未変更（同じ値・件数のみ）: yobou FAQ「21〜30万円」・yukashita-tenken「5万〜10万円が中央値」・kuchu-hiyou「21万円〜30万円が中心的な価格帯」。
+- src 8933f68 ／ deploy 0b98bf8。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-02/
