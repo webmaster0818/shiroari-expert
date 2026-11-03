@@ -62,7 +62,20 @@ const persona = [
 ];
 
 export default function Home() {
-  const top = getTopProviders();
+  // trust-audit C6（2026-11-03）: ハウスプロテクトの「4.7点」に出典を付ける。値は同社公式TOP（2026-11-03確認）どおり（件数 5,492→5,702）。
+  // gyousha-erabikata は okina 判断待ちのため providers.ts は変えず TOP のみ差し替え。
+  const top = getTopProviders().map((p) =>
+    p.slug === "house-protect"
+      ? {
+          ...p,
+          features: p.features.map((f) =>
+            f.startsWith("全社クチコミ")
+              ? "公式サイトに「ハウスプロテクト全社のクチコミ（5702件）の平均点 4.7」と掲載されています（2024年6月時点・同社調べ／当サイトによる評価ではありません）。出典：https://house-protect.net/（2026年11月3日確認）"
+              : f,
+          ),
+        }
+      : p,
+  );
 
   return (
     <>
