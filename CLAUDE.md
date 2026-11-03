@@ -102,3 +102,8 @@
 - chuuko-juutaku-inspection: 費用表4セル・FAQ 2値・まとめ「数万円」を削除し「各社にお見積りをご確認ください」等に。h2「費用の目安」→「費用の確認のしかた」。sitemap lastmod 11-02。
 - 未変更（同じ値・件数のみ）: yobou FAQ「21〜30万円」・yukashita-tenken「5万〜10万円が中央値」・kuchu-hiyou「21万円〜30万円が中心的な価格帯」。
 - src 8933f68 ／ deploy 0b98bf8。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-02/
+
+### 2026-11-03 TOP の「4.7点」に出典（trust-audit C6）
+- TOP ランキングのハウスプロテクト「全社クチコミ5,492件の平均4.7点」→ 同社公式TOP（11/3 確認）どおり「5702件の平均点 4.7（2024年6月時点・同社調べ）」＋当サイトの評価ではない旨＋出典URL。app/page.tsx で TOP だけ差し替え（providers.ts 不変）。
+- 未変更: gyousha-erabikata の同じ記載（5,492件・出典なし・okina 判断待ち）。
+- src 83640f7 ／ deploy 6c2ee38。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-03/
