@@ -107,3 +107,8 @@
 - TOP ランキングのハウスプロテクト「全社クチコミ5,492件の平均4.7点」→ 同社公式TOP（11/3 確認）どおり「5702件の平均点 4.7（2024年6月時点・同社調べ）」＋当サイトの評価ではない旨＋出典URL。app/page.tsx で TOP だけ差し替え（providers.ts 不変）。
 - 未変更: gyousha-erabikata の同じ記載（5,492件・出典なし・okina 判断待ち）。
 - src 83640f7 ／ deploy 6c2ee38。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-03/
+
+### 2026-11-04 業者の選び方の出典なし6種類を削除（11/3 宣言・okina 回答なし）
+- gyousha-erabikata: 「業界標準は5年保証」「100%自社施工を公式に明記」「2026年5月時点で確認」・FAQ「多くの業者が無料を明記」「協会の施工基準に沿って施工する義務」「シェアNo.1」（本文とカード）を削除。カードの tagline は page.tsx で本ページだけ差し替え（providers.ts 不変）。updatedAt・sitemap lastmod 11-04。
+- 未変更: ★5,492件（okina 判断待ち）。同じ記述の他ページ＝kuchu-hiyou「5年保証は業界標準」1・yukashita-tenken「多くの業者が無料」2・TOP カード「シェアNo.1」1。
+- src 4397fd5 ／ deploy 0d306b2。precheck 全項目OK・可視差分1ページ・felmat 10→10・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-04/
