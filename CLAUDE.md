@@ -112,3 +112,8 @@
 - gyousha-erabikata: 「業界標準は5年保証」「100%自社施工を公式に明記」「2026年5月時点で確認」・FAQ「多くの業者が無料を明記」「協会の施工基準に沿って施工する義務」「シェアNo.1」（本文とカード）を削除。カードの tagline は page.tsx で本ページだけ差し替え（providers.ts 不変）。updatedAt・sitemap lastmod 11-04。
 - 未変更: ★5,492件（okina 判断待ち）。同じ記述の他ページ＝kuchu-hiyou「5年保証は業界標準」1・yukashita-tenken「多くの業者が無料」2・TOP カード「シェアNo.1」1。
 - src 4397fd5 ／ deploy 0d306b2。precheck 全項目OK・可視差分1ページ・felmat 10→10・Indexing OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-04/
+
+### 2026-11-05 sitemap lastmod 3記事を実際の変更日に（11/4 宣言・okina 回答なし）
+- aimitsumori・hosho-naiyou 09-17→10-16／tenken-jiki 09-17→10-17（git log で確認）。title・本文は不変。
+- 未変更: 3記事のページ内の更新日（updatedAt・dateModified は 2026-09-17 のまま）。★5,492件（okina 判断待ち）。
+- src 9ae584b ／ deploy d6a389d。precheck 全項目OK・可視差分0ページ・felmat 10→10・Indexing 2本。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-05/
