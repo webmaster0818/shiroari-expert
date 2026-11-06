@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta}>
+    <ArticleLayout meta={meta} updatedAt="2026-11-06">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリの被害は床下から進行することが多く、<strong>床下点検は早期発見の最重要手段</strong>です。多くの業者が「無料点検」を打ち出していますが、無料の意味・契約義務の有無・悪質な訪問販売の見分け方を知っておくことで、安心して点検を受けられます。本記事では費用相場と注意点を整理します。
@@ -59,7 +59,10 @@ export default function Page() {
       </ul>
       <h3>有料点検（中立的な診断）</h3>
       <p>
-        ホームインスペクター（住宅診断士）が実施する有料点検は、戸建てで5万〜10万円程度が中央値です。中古住宅購入時や、独立した第三者の判断が必要な場合に選ばれます。報告書は施工とは独立した中立的なものになります。
+        ホームインスペクター（住宅診断士）が実施する有料点検の費用は、依頼先にご確認ください。
+        <a href="https://www.jshi.org/faq/" target="_blank" rel="noopener noreferrer">日本ホームインスペクターズ協会</a>は費用の基準を設けておらず、公認ホームインスペクターや所属会社によって異なるとしています。
+        国土交通省の<a href="https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/content/001735147.pdf" target="_blank" rel="noopener noreferrer">「建物状況調査（インスペクション）活用の手引き」</a>（令和6年4月）は、建物状況調査の費用について、物件の規模や調査実施者によって異なるものの「6万円程度～」を目安としています（2026年11月6日確認）。
+        有料点検は、中古住宅購入時や、独立した第三者の判断が必要な場合に選ばれます。報告書は施工とは独立した中立的なものになります。
       </p>
 
       <h2>無料点検で確認される項目</h2>

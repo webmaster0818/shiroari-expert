@@ -20,7 +20,7 @@ const faqs: FaqItem[] = [
   {
     question: "予防の費用はいくらかかりますか？",
     answer:
-      "予防処理は駆除と同等の費用が目安で、30坪のバリア工法で21〜30万円程度です。",
+      "予防処理の費用は、工法・床面積・建物の構造によって異なるため、具体的な金額は各社の見積もりでご確認ください。見積書では、施工面積・薬剤名・保証期間・追加費用が発生する条件をご確認いただくことをおすすめします。",
   },
   {
     question: "床下に湿気が多い場合の対策は？",
@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta}>
+    <ArticleLayout meta={meta} updatedAt="2026-11-06">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ予防の基本は<strong>5年ごとの防蟻処理サイクル</strong>です。新築時の初期処理から築古住宅まで、住宅のライフサイクルに応じた予防のタイミングと方法を整理します。
