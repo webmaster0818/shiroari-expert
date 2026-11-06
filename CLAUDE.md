@@ -117,3 +117,8 @@
 - aimitsumori・hosho-naiyou 09-17→10-16／tenken-jiki 09-17→10-17（git log で確認）。title・本文は不変。
 - 未変更: 3記事のページ内の更新日（updatedAt・dateModified は 2026-09-17 のまま）。★5,492件（okina 判断待ち）。
 - src 9ae584b ／ deploy d6a389d。precheck 全項目OK・可視差分0ページ・felmat 10→10・Indexing 2本。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-05/
+
+### 2026-11-06 出典なし費用3か所（11/5 宣言・okina 回答なし）
+- yobou FAQ「21〜30万円」・kuchu-hiyou「21万円〜30万円が中心的な価格帯」を削除し見積もりでの確認案内に。yukashita-tenken「5万〜10万円が中央値」→ JSHI FAQ（基準なし）・国交省 建物状況調査活用の手引き 令和6年4月（「6万円程度～」が目安・11/6 確認）。3ページの updatedAt・sitemap lastmod 11-06。title・description 不変。協会サイトは 11/6 も公開停止中。
+- 未変更: kuchu-hiyou FAQ「30坪で20万円前後が中央値」・yobou「電気代月100〜500円」（出典なし）。★5,492件・TOP「シェアNo.1」・ページ内更新日3記事（okina 判断待ち）。
+- src c14b1f2 ／ deploy 8a4b150。precheck 全項目OK・可視差分3ページ・felmat 10→10・本番旧値0・Indexing 3本 OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-06/
