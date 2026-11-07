@@ -49,11 +49,23 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   // 2026-11-04: 「シェアNo.1」を本ページから外す（11/3 宣言）。providers.ts は TOP でも使うので変えない。
-  const top = getTopProviders().map((p) =>
-    p.slug === "asante" ? { ...p, tagline: "東証プライム上場の大手（公式記載）" } : p,
-  );
+  // 2026-11-07: ハウスプロテクトの「4.7点」を TOP と同じ公式出典・件数に（11/6 宣言）。公式TOP を 2026-11-07 に確認（5702件・4.7・2024年6月時点で不変）。
+  const top = getTopProviders().map((p) => {
+    if (p.slug === "asante") return { ...p, tagline: "東証プライム上場の大手（公式記載）" };
+    if (p.slug === "house-protect") {
+      return {
+        ...p,
+        features: p.features.map((f) =>
+          f.startsWith("全社クチコミ")
+            ? "公式サイトに「ハウスプロテクト全社のクチコミ（5702件）の平均点 4.7」と掲載されています（2024年6月時点・同社調べ／当サイトによる評価ではありません）。出典：https://house-protect.net/（2026年11月7日確認）"
+            : f,
+        ),
+      };
+    }
+    return p;
+  });
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-11-04">
+    <ArticleLayout meta={meta} updatedAt="2026-11-07">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ駆除業者を選ぶうえで最も重要なのは、<strong>公益社団法人日本しろあり対策協会の加盟有無</strong>と、<strong>施工方式・保証・対応エリア</strong>の3点が明確に開示されているかです。本記事では、公式サイトで運営会社と施工内容を確認できる主要6社を、編集部が独自基準で比較しました。
