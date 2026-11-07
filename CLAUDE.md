@@ -122,3 +122,7 @@
 - yobou FAQ「21〜30万円」・kuchu-hiyou「21万円〜30万円が中心的な価格帯」を削除し見積もりでの確認案内に。yukashita-tenken「5万〜10万円が中央値」→ JSHI FAQ（基準なし）・国交省 建物状況調査活用の手引き 令和6年4月（「6万円程度～」が目安・11/6 確認）。3ページの updatedAt・sitemap lastmod 11-06。title・description 不変。協会サイトは 11/6 も公開停止中。
 - 未変更: kuchu-hiyou FAQ「30坪で20万円前後が中央値」・yobou「電気代月100〜500円」（出典なし）。★5,492件・TOP「シェアNo.1」・ページ内更新日3記事（okina 判断待ち）。
 - src c14b1f2 ／ deploy 8a4b150。precheck 全項目OK・可視差分3ページ・felmat 10→10・本番旧値0・Indexing 3本 OK。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-06/
+
+### 2026-11-07 業者の選び方の★を公式出典に（11/6 宣言・okina 回答なし）
+- gyousha-erabikata: ハウスプロテクト「全社クチコミ5,492件の平均4.7点」→ TOP と同じ「5702件の平均点 4.7（2024年6月時点・同社調べ）」＋当サイトの評価ではない旨＋出典URL（公式 11/7 確認・11/3 から不変のため TOP は変更なし）。page.tsx で差し替え。providers.ts の 5,492 は表示されない残り値。updatedAt・sitemap lastmod 11-07。
+- src 4a4cb2d ／ deploy adb824d。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・71ページ deploy と一致。Indexing 枠切れで未送信。協会サイトは 11/7 も公開停止中。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-07/
