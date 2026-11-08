@@ -36,7 +36,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-09-17">
+    <ArticleLayout meta={meta} updatedAt="2026-10-16">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ駆除は、同じ住宅でも会社によって見積もりが異なります。

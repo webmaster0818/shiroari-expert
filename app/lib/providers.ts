@@ -49,7 +49,7 @@ export const PROVIDERS: Provider[] = [
     name: "アサンテ",
     url: "https://www.asante.co.jp/",
     operator: "株式会社アサンテ（東証プライム上場）",
-    tagline: "東証プライム上場・シロアリ対策シェアNo.1を掲げる大手（公式記載）",
+    tagline: "東証プライム上場の大手（公式記載）",
     features: [
       "東北〜九州の28都府県・77拠点（北海道・沖縄は拠点なし／公式記載）",
       "5年保証を設けた防蟻処理のサイクルを公式サイトで案内",

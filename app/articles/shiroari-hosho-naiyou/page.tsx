@@ -39,7 +39,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-09-17">
+    <ArticleLayout meta={meta} updatedAt="2026-10-16">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ駆除の見積書には、多くの場合「5年保証」と記載されています。

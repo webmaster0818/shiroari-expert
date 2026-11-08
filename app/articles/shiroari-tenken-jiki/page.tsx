@@ -36,7 +36,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-09-17">
+    <ArticleLayout meta={meta} updatedAt="2026-10-17">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ点検の時期は、<strong>羽アリが発生する時期から逆算する</strong>と決めやすくなります。
