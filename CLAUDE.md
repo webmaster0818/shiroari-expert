@@ -126,3 +126,8 @@
 ### 2026-11-07 業者の選び方の★を公式出典に（11/6 宣言・okina 回答なし）
 - gyousha-erabikata: ハウスプロテクト「全社クチコミ5,492件の平均4.7点」→ TOP と同じ「5702件の平均点 4.7（2024年6月時点・同社調べ）」＋当サイトの評価ではない旨＋出典URL（公式 11/7 確認・11/3 から不変のため TOP は変更なし）。page.tsx で差し替え。providers.ts の 5,492 は表示されない残り値。updatedAt・sitemap lastmod 11-07。
 - src 4a4cb2d ／ deploy adb824d。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番旧値0・71ページ deploy と一致。Indexing 枠切れで未送信。協会サイトは 11/7 も公開停止中。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-07/
+
+### 2026-11-08 TOP「シェアNo.1」削除・3記事のページ内更新日（11/7 宣言・okina 回答なし）
+- providers.ts アサンテ tagline「東証プライム上場・シロアリ対策シェアNo.1を掲げる大手（公式記載）」→「東証プライム上場の大手（公式記載）」（gyousha-erabikata の page.tsx 差し替えと同じ文言）。表示は TOP のみ（他ページで tagline を出すのは gyousha-erabikata＝上書き済み、reviews/shiroari-110＝110番の tagline）。sitemap / lastmod 11-08。
+- aimitsumori・hosho-naiyou updatedAt 09-17 → 10-16（897c2e3）、tenken-jiki 09-17 → 10-17（ac6cb75）。sitemap lastmod（11/5 修正済み）と一致。
+- src 32fd782 ／ deploy b3a5a50。precheck 全項目OK・可視差分4ページ・felmat 8→8。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-08/
