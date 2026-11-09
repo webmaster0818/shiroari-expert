@@ -131,3 +131,8 @@
 - providers.ts アサンテ tagline「東証プライム上場・シロアリ対策シェアNo.1を掲げる大手（公式記載）」→「東証プライム上場の大手（公式記載）」（gyousha-erabikata の page.tsx 差し替えと同じ文言）。表示は TOP のみ（他ページで tagline を出すのは gyousha-erabikata＝上書き済み、reviews/shiroari-110＝110番の tagline）。sitemap / lastmod 11-08。
 - aimitsumori・hosho-naiyou updatedAt 09-17 → 10-16（897c2e3）、tenken-jiki 09-17 → 10-17（ac6cb75）。sitemap lastmod（11/5 修正済み）と一致。
 - src 32fd782 ／ deploy b3a5a50。precheck 全項目OK・可視差分4ページ・felmat 8→8。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-08/
+
+### 2026-11-09 kuchu-hiyou FAQ 中央値削除・中古住宅記事に国交省の調査費用目安（11/8 宣言・okina 回答なし）
+- kuchu-hiyou FAQ「初回工事費はバリア工法のほうが安く、30坪で20万円前後が中央値です。」→「初回工事費はバリア工法のほうが安い傾向です。」（他の数字は不変）。
+- chuuko-juutaku-inspection: 国交省「建物状況調査（インスペクション）活用の手引き」令和6年4月（content/001735147.pdf・11/9 確認・原文「調査費用は、物件の規模の加えて、調査実施者によっても異なりますが、６万円程度～が目安となります。」）を表のホームインスペクション行・表下の注記・FAQ に出典つきで追加。シロアリ床下点検（単独）・瑕疵保険の行は確認の案内のまま（国交省の値は建物状況調査のもの）。両記事 updatedAt・sitemap lastmod 11-09。
+- src 42925c2 ／ deploy 3114cb0。precheck 全項目OK・可視差分2ページ・felmat 10→10・本番71ページ deploy と一致。Indexing 429 で未送信。協会サイトは 11/9 も公開停止中。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-09/
