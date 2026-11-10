@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-11-09">
+    <ArticleLayout meta={meta} updatedAt="2026-11-10">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ駆除の費用は<strong>工法と床面積</strong>で大きく変わります。日本で主流の駆除方式は「バリア工法（液剤散布型）」と「ベイト工法（毒餌型）」の2種類です。本記事では両工法の費用構造と、見積もりで確認すべき項目を整理します。
@@ -97,7 +97,7 @@ export default function Page() {
       </p>
       <h3>4. 保証費・点検費</h3>
       <p>
-        5年保証は業界標準ですが、保証期間中の<strong>再発時の無償対応範囲</strong>が業者ごとに異なります。「再発時に駆除のみ無料／木部交換は実費」のように条件が分かれるため、書面で確認してください。
+        保証期間や、保証期間中の<strong>再発時の無償対応範囲</strong>は業者ごとに異なります。「再発時に駆除のみ無料／木部交換は実費」のように条件が分かれるため、書面で確認してください。
       </p>
 
       <h2>追加費用が発生しやすいケース</h2>
