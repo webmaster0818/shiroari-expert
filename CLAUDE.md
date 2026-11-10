@@ -136,3 +136,7 @@
 - kuchu-hiyou FAQ「初回工事費はバリア工法のほうが安く、30坪で20万円前後が中央値です。」→「初回工事費はバリア工法のほうが安い傾向です。」（他の数字は不変）。
 - chuuko-juutaku-inspection: 国交省「建物状況調査（インスペクション）活用の手引き」令和6年4月（content/001735147.pdf・11/9 確認・原文「調査費用は、物件の規模の加えて、調査実施者によっても異なりますが、６万円程度～が目安となります。」）を表のホームインスペクション行・表下の注記・FAQ に出典つきで追加。シロアリ床下点検（単独）・瑕疵保険の行は確認の案内のまま（国交省の値は建物状況調査のもの）。両記事 updatedAt・sitemap lastmod 11-09。
 - src 42925c2 ／ deploy 3114cb0。precheck 全項目OK・可視差分2ページ・felmat 10→10・本番71ページ deploy と一致。Indexing 429 で未送信。協会サイトは 11/9 も公開停止中。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-09/
+
+### 2026-11-10 出典なしの一般化3か所（11/4 と同じ型）
+- kuchu-hiyou「5年保証は業界標準ですが、」→「保証期間や、保証期間中の再発時の無償対応範囲は業者ごとに異なります。」／yukashita-tenken 冒頭・まとめ「多くの業者が無料」2か所 →「点検が無料かどうかは業者により異なるため確認を」。一次情報（公的・業界団体）で裏付けなし（11/10 確認・協会は公開停止中）。両記事 updatedAt・sitemap lastmod 11-10。title・description 不変。
+- src 5c93918 ／ deploy 5834ed9。precheck 全項目OK・可視差分2ページ・felmat 10→10・本番73ページ deploy と一致。Indexing 枠切れで未送信。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-10/
