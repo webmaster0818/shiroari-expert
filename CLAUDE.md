@@ -140,3 +140,8 @@
 ### 2026-11-10 出典なしの一般化3か所（11/4 と同じ型）
 - kuchu-hiyou「5年保証は業界標準ですが、」→「保証期間や、保証期間中の再発時の無償対応範囲は業者ごとに異なります。」／yukashita-tenken 冒頭・まとめ「多くの業者が無料」2か所 →「点検が無料かどうかは業者により異なるため確認を」。一次情報（公的・業界団体）で裏付けなし（11/10 確認・協会は公開停止中）。両記事 updatedAt・sitemap lastmod 11-10。title・description 不変。
 - src 5c93918 ／ deploy 5834ed9。precheck 全項目OK・可視差分2ページ・felmat 10→10・本番73ページ deploy と一致。Indexing 枠切れで未送信。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-10/
+
+### 2026-11-11 yukashita-tenken 大手3社の無料点検（出典確認）
+- 3社の公式を 11/11 に開いて原文確認: シロアリ110番 /shiroari/「無料で事前調査」（対応エリア・加盟店・現場状況等の注記あり）／アサンテ /termite/「床下診断・お見積りは無料です。施工は有料」／ハウスプロテクト トップ「無料で調査・お見積もりを実施」（害獣駆除中心の案内）。FAQ・本文・箇条を3社限定＋原文引用＋公式リンク＋確認日に。「業界主要各社は」の一般化は外し、その他は業者により異なるため確認を。
+- 協会サイト（hakutaikyo.or.jp）は 11/11 に再開を確認。使用中の協会URL 24本すべて 200。協会リンク55ページ・shurui-bunpu の協会値の再確認は未実施。
+- src 7f7d133 ／ deploy a2640709。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番72ページ deploy と一致。Indexing 枠切れ。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-11/
