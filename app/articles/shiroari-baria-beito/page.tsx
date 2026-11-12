@@ -92,7 +92,7 @@ export default function Page() {
         <a href={SHIYOUSHO} target="_blank" rel="noopener noreferrer">「防除施工標準仕様書（令和7年10月版）」</a>、
         <a href={BOUJO} target="_blank" rel="noopener noreferrer">「シロアリ防除について」</a>、
         <a href={faq(2682)} target="_blank" rel="noopener noreferrer">Q&amp;A「ベイト工法と薬剤の散布施工はどう違うのですか」</a>
-        （いずれも2026年10月17日確認）
+        （いずれも2026年11月12日確認）
       </p>
 
       <h2>バリア工法（土壌処理・木材処理）の仕組み</h2>
@@ -195,7 +195,7 @@ export default function Page() {
         <a href={faq(2659)} target="_blank" rel="noopener noreferrer">2659</a>・
         <a href={faq(2652)} target="_blank" rel="noopener noreferrer">2652</a>・
         <a href={faq(2651)} target="_blank" rel="noopener noreferrer">2651</a>・
-        <a href={faq(2706)} target="_blank" rel="noopener noreferrer">2706</a>）、2026年10月17日確認
+        <a href={faq(2706)} target="_blank" rel="noopener noreferrer">2706</a>）、2026年11月12日確認
       </p>
 
       <FAQ items={faqs} />

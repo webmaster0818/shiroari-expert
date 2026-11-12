@@ -55,7 +55,7 @@ export default function Page() {
         <a href="https://www.hakutaikyo.or.jp/faq/2278.html" target="_blank" rel="noopener noreferrer">
           「羽アリが飛ぶ時期はいつごろですか？」
         </a>
-        （2026年9月17日確認）
+        （2026年11月12日確認）
       </p>
       <p>
         お住まいの地域でどの種類が対象となるかは

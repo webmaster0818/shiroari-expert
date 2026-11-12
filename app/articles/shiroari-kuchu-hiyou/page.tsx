@@ -76,7 +76,7 @@ export default function Page() {
       <p>
         日本しろあり対策協会は「一般的にベイト工法のほうが費用がかかります」と回答しています（
         <a href="https://www.hakutaikyo.or.jp/faq/2682.html" target="_blank" rel="noopener noreferrer">協会Q&amp;A</a>
-        ・2026年10月20日確認）。
+        ・2026年11月12日確認）。
       </p>
       <p>
         具体的な金額は業者・建物によって異なります。バリア工法の再施工やベイト工法のモニタリング契約など、数年単位で必要になる費用も含めて、現地調査後の正式見積もりで比較してください。

@@ -42,7 +42,7 @@ export default function Page() {
           <a className="underline ml-1" href="https://www.hakutaikyo.or.jp/faq/2278.html" target="_blank" rel="noopener noreferrer">
             羽アリが飛ぶ時期
           </a>
-          （2026年9月17日確認）
+          （2026年11月12日確認）
         </p>
 
         {/* 「沖縄 シロアリ」で /area/ が表示されるため、沖縄の答えと沖縄県ページへの導線を上に置く。事実は上の協会Q&A（areas.ts と同じ） */}

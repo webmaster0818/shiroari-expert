@@ -117,7 +117,7 @@ export default function Page() {
       <p className="text-sm">
         出典：日本しろあり対策協会
         <a href="https://www.hakutaikyo.or.jp/faq/2682.html" target="_blank" rel="noopener noreferrer">Q&amp;A「ベイト工法と薬剤の散布施工はどう違うのですか」</a>
-        （2026年10月20日確認）
+        （2026年11月12日確認）
       </p>
       <p>
         各工法の仕組みと協会の仕様書上の位置付けは

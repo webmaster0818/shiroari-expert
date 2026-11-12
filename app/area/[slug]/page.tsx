@@ -155,7 +155,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           <a className="underline ml-1" href="https://www.hakutaikyo.or.jp/faq/1813.html" target="_blank" rel="noopener noreferrer">
             hakutaikyo.or.jp
           </a>
-          （2026年9月17日確認）
+          （2026年11月12日確認）
         </p>
 
         <h2 className="mt-10 text-xl font-bold text-primary-dark">

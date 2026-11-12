@@ -171,7 +171,7 @@ export default function Page() {
       <p className="text-sm">
         出典：公益社団法人日本しろあり対策協会
         <a href={KENSA} target="_blank" rel="noopener noreferrer">「蟻害・腐朽検査制度」</a>
-        （2026年10月17日確認）
+        （2026年11月12日確認）
       </p>
       <p>
         購入前に点検を行う時期や進め方は<Link href="/articles/chuuko-juutaku-inspection/">中古住宅購入時のシロアリインスペクション</Link>をご覧ください。
@@ -195,7 +195,7 @@ export default function Page() {
         <a href={SHIYOUSHO} target="_blank" rel="noopener noreferrer">「防除施工標準仕様書（令和7年10月版）」</a>
         、同「よくある質問」、e-Gov法令検索
         <a href={EGOV_REI} target="_blank" rel="noopener noreferrer">「建築基準法施行令」第49条</a>
-        （いずれも2026年10月17日確認）
+        （いずれも2026年11月12日確認）
       </p>
 
       <FAQ items={faqs} />
