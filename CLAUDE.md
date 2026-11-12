@@ -145,3 +145,8 @@
 - 3社の公式を 11/11 に開いて原文確認: シロアリ110番 /shiroari/「無料で事前調査」（対応エリア・加盟店・現場状況等の注記あり）／アサンテ /termite/「床下診断・お見積りは無料です。施工は有料」／ハウスプロテクト トップ「無料で調査・お見積もりを実施」（害獣駆除中心の案内）。FAQ・本文・箇条を3社限定＋原文引用＋公式リンク＋確認日に。「業界主要各社は」の一般化は外し、その他は業者により異なるため確認を。
 - 協会サイト（hakutaikyo.or.jp）は 11/11 に再開を確認。使用中の協会URL 24本すべて 200。協会リンク55ページ・shurui-bunpu の協会値の再確認は未実施。
 - src 7f7d133 ／ deploy a2640709。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番72ページ deploy と一致。Indexing 枠切れ。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-11/
+
+### 2026-11-12 協会リンク55ページ・協会値の再照合（協会サイト再開後）
+- 協会URL 24本を 11/12 に取得し原文と照合: shurui-bunpu・area 48p・areas.ts の分布/群飛、baria-beito・chikunensu-meyasu の仕様書（令和7年10月版のまま）/シロアリ防除について/蟻害・腐朽検査制度、Q&A 19本の引用 → 食い違い0・リンク切れ0。
+- 既存の協会の確認日表示だけ 9/17・10/17・10/20 → 2026年11月12日（55p）。協会以外の出典の日付・updatedAt・lastmod は不変。
+- src cd71e69 ／ deploy 45648714。precheck 全項目OK・可視差分55ページ（確認日のみ）・felmat 10→10・本番73本 deploy と一致。Indexing は確認日のみのため未送信。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-12/
