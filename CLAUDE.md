@@ -150,3 +150,7 @@
 - 協会URL 24本を 11/12 に取得し原文と照合: shurui-bunpu・area 48p・areas.ts の分布/群飛、baria-beito・chikunensu-meyasu の仕様書（令和7年10月版のまま）/シロアリ防除について/蟻害・腐朽検査制度、Q&A 19本の引用 → 食い違い0・リンク切れ0。
 - 既存の協会の確認日表示だけ 9/17・10/17・10/20 → 2026年11月12日（55p）。協会以外の出典の日付・updatedAt・lastmod は不変。
 - src cd71e69 ／ deploy 45648714。precheck 全項目OK・可視差分55ページ（確認日のみ）・felmat 10→10・本番73本 deploy と一致。Indexing は確認日のみのため未送信。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-12/
+
+### 2026-11-15 jibun-de 出典の無い効果期間を削除（11/14 宣言・okina 回答なし）
+- 10/30 に報告のみだった5値のうち、出典なしの3か所（市販防蟻剤「3〜6ヶ月」FAQ・本文、土壌処理用粉剤「数ヶ月程度」）を削除し「製品・使用条件により異なるため製品ラベル・メーカーの記載を確認」に。業務用「5年程度」は協会 Q&A 2654（薬剤の有効期限は５年）で裏付けあり＝残す。群飛「4〜6月」は協会 Q&A 2278 のヤマトのみ合致（イエ 6〜7月・アメカン 6〜9月は範囲外）＝残して okina 判断。updatedAt・sitemap lastmod 11-15。
+- src aef3a26 ／ deploy fcd462ce。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番73本 deploy と一致。Indexing 枠切れ。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-15/
