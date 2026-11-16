@@ -49,7 +49,7 @@ const persona = [
   },
   {
     title: "業者の選び方がわからない方",
-    desc: "公益社団法人日本しろあり対策協会の加盟業者を中心に、保証期間・施工方式・対応エリアを中立的な立場で比較しています。",
+    desc: "保証期間・施工方式・対応エリアを、各社の公式サイトの記載をもとに中立的な立場で比較しています。",
     link: "/articles/shiroari-gyousha-erabikata/",
     cta: "業者の選び方を見る",
   },
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs md:text-sm text-foreground/80">
             <div className="flex items-start gap-2">
               <span className="text-accent font-bold">01</span>
-              <p>公益社団法人加盟の業者を中心に掲載</p>
+              <p>各社の公式サイトで確認できる情報をもとに掲載</p>
             </div>
             <div className="flex items-start gap-2">
               <span className="text-accent font-bold">02</span>
