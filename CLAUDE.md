@@ -154,3 +154,7 @@
 ### 2026-11-15 jibun-de 出典の無い効果期間を削除（11/14 宣言・okina 回答なし）
 - 10/30 に報告のみだった5値のうち、出典なしの3か所（市販防蟻剤「3〜6ヶ月」FAQ・本文、土壌処理用粉剤「数ヶ月程度」）を削除し「製品・使用条件により異なるため製品ラベル・メーカーの記載を確認」に。業務用「5年程度」は協会 Q&A 2654（薬剤の有効期限は５年）で裏付けあり＝残す。群飛「4〜6月」は協会 Q&A 2278 のヤマトのみ合致（イエ 6〜7月・アメカン 6〜9月は範囲外）＝残して okina 判断。updatedAt・sitemap lastmod 11-15。
 - src aef3a26 ／ deploy fcd462ce。precheck 全項目OK・可視差分1ページ・felmat 10→10・本番73本 deploy と一致。Indexing 枠切れ。記録 ~/.openclaw/workspace/growth/okina/shiroari-fix-2026-11-15/
+
+## 2026-11-17 16時（②okina 遅れ挽回）
+- 補助金記事に国の制度（長期優良住宅化リフォーム推進事業 R7「床下防湿、防蟻措置」・1/3・80万円/戸／R8 は性能向上型・防蟻明記なし）を要点・節・FAQ に追加。国交省PDF 11/17確認。
+- src 617bc25 ／ deploy a469f701。precheck 全項目OK・可視差分1ページ・計測リンク 25→25・本番確認。Indexing 429 → sitemap 再送信。記録 ~/.openclaw/workspace/growth/okina/late16-2026-11-17/
