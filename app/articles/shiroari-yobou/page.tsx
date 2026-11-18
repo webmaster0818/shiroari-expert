@@ -41,7 +41,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-11-06">
+    <ArticleLayout meta={meta} updatedAt="2026-11-18">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ予防の基本は<strong>5年ごとの防蟻処理サイクル</strong>です。新築時の初期処理から築古住宅まで、住宅のライフサイクルに応じた予防のタイミングと方法を整理します。
@@ -85,7 +85,7 @@ export default function Page() {
       <ol>
         <li><strong>床下換気口の確保</strong>：換気口の周囲に物を置かず、目詰まりを定期的に清掃。</li>
         <li><strong>防湿シートの敷設</strong>：床下土壌からの湿気を遮断する効果的な方法。</li>
-        <li><strong>床下換気扇の設置</strong>：強制換気で湿気のこもりを防ぐ。電気代月100〜500円程度が目安。</li>
+        <li><strong>床下換気扇の設置</strong>：強制換気で湿気のこもりを防ぐ。電気代は機種の消費電力と運転時間により異なるため、メーカーの仕様で確認する。</li>
         <li><strong>床下調湿材</strong>：炭・ゼオライト等の調湿材を床下に敷設し、湿度を緩衝。</li>
         <li><strong>雨樋・配管の漏水修理</strong>：屋外からの水侵入を遮断。</li>
       </ol>
