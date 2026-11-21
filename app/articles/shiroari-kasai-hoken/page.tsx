@@ -15,7 +15,7 @@ const faqs: FaqItem[] = [
   {
     question: "シロアリ被害は火災保険の対象になりますか？",
     answer:
-      "原則として、シロアリの食害そのものは火災保険の補償対象外です。約款の文言は保険会社・商品ごとに異なるため、加入している保険の約款で「保険金を支払わない場合」の条項を確認してください。",
+      "シロアリの食害そのものは、火災保険では補償の対象外であることが多いと損害保険会社（SOMPOダイレクト）は説明しています。約款の文言は保険会社・商品ごとに異なるため、加入している保険の約款で「保険金を支払わない場合」の条項を確認してください。",
   },
   {
     question: "それでも火災保険が適用される場合はありますか？",
@@ -56,16 +56,16 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-10-22">
+    <ArticleLayout meta={meta} updatedAt="2026-11-21">
       <FaqJsonLd items={faqs} />
       <p>
-        「シロアリ駆除に保険は使えますか？」というご質問を多くいただきますが、原則としてシロアリ被害そのものは<strong>火災保険・地震保険ともに補償対象外</strong>です。本記事では、約款で確認すべきポイントと、関連する税控除制度を整理します。
+        シロアリ被害そのものは、<strong>火災保険では補償の対象外であることが多い</strong>と損害保険会社は説明しています（<a href="https://www.sompo-direct.co.jp/eraberu/kotsu/article/column038.html" target="_blank" rel="noopener noreferrer">SOMPOダイレクト</a>）。<strong>地震保険</strong>は地震・噴火・津波による損害を補償する保険のため（<a href="https://www.sonpo.or.jp/insurance/jishin/" target="_blank" rel="noopener noreferrer">日本損害保険協会</a>）、シロアリ被害は対象になりません。一方、シロアリ被害の修繕費用と駆除費用は、所得税の雑損控除の対象です（国税庁）。本記事では、約款で確認すべきポイントと、雑損控除の要件を整理します（2026年11月21日確認）。
       </p>
 
       <div className="notice-box">
         <p className="font-bold text-primary-dark mb-1">結論</p>
         <ul className="text-sm leading-relaxed mb-0">
-          <li><strong>火災保険</strong>：シロアリ被害そのものは原則として対象外です（理由と損害保険会社の解説は本文で紹介します）。台風・大雨などの事故の後に見つかったシロアリ被害の扱いを示した保険会社の公式の説明は確認できませんでした。</li>
+          <li><strong>火災保険</strong>：シロアリ被害そのものは対象外であることが多いと損害保険会社は説明しています（本文で紹介します）。台風・大雨などの事故の後に見つかったシロアリ被害の扱いを示した保険会社の公式の説明は確認できませんでした。</li>
           <li><strong>雑損控除（所得税）</strong>：シロアリ被害の修繕費用と駆除費用は対象、予防のための費用は対象外です（<a href="https://www.nta.go.jp/law/shitsugi/shotoku/05/01.htm" target="_blank" rel="noopener noreferrer">国税庁「シロアリの駆除費用」</a>）。</li>
           <li><strong>「保険で無料になる」という勧誘</strong>：国民生活センターが注意を呼びかけています。保険金の請求は加入者自身で行えます（<a href="https://www.kokusen.go.jp/news/data/n-20210902_2.html" target="_blank" rel="noopener noreferrer">国民生活センター 2021年9月2日公表</a>）。</li>
         </ul>
@@ -80,7 +80,7 @@ export default function Page() {
 
       <h2>火災保険でシロアリ被害が対象外の理由</h2>
       <p>
-        火災保険は「偶発的かつ突発的な事故による損害」を補償する保険です。火災・落雷・破裂爆発・風災・水災などが主な補償対象です。
+        日本損害保険協会の説明では、住宅火災保険の補償は火災・落雷・ガス爆発などの破裂/爆発・風災/ひょう災/雪災で、住宅総合保険ではこれに水災・給排水設備の事故等による水濡れ・盗難などが加わります。補償の項目に、シロアリなど虫による損害は挙げられていません（<a href="https://www.sonpo.or.jp/insurance/kasai/" target="_blank" rel="noopener noreferrer">日本損害保険協会「火災保険」</a>・2026年11月21日確認）。
       </p>
 
       <h2>水濡れ事故があった場合</h2>
@@ -136,7 +136,7 @@ export default function Page() {
       <div className="warning-box">
         <p className="font-bold text-danger mb-1">「火災保険でシロアリ駆除が無料」とする勧誘にご注意ください</p>
         <p className="text-sm leading-relaxed mb-0">
-          「火災保険を使えばシロアリ駆除が無料になる」と勧誘する業者は、保険金詐取目的の悪質業者の可能性があります。シロアリ被害単独では火災保険は適用されないのが原則で、虚偽申告は保険金詐欺罪に該当します。このような勧誘には応じず、ご自身で保険会社にご確認ください。
+          シロアリ被害そのものは火災保険の対象外であることが多いと損害保険会社は説明しています。「火災保険を使えばシロアリ駆除が無料になる」と勧誘されても、その場で契約せず、補償の対象になるかをご自身で保険会社にご確認ください。
         </p>
         <p className="text-sm leading-relaxed mb-0 mt-2">
           国民生活センターは「保険金が使える」と勧誘する住宅修理サービスの相談について、2018年に「2017年度は2008年度に比べて30倍以上」と公表し（<a href="https://www.kokusen.go.jp/news/data/n-20180906_1.html" target="_blank" rel="noopener noreferrer">2018年9月6日公表</a>）、2021年にも「請求期限が迫っている」と急がせる事例などを挙げて、申請サポート会社に頼らず加入者自身で請求できること、うその理由で請求しないことを呼びかけています（<a href="https://www.kokusen.go.jp/news/data/n-20210902_2.html" target="_blank" rel="noopener noreferrer">2021年9月2日公表</a>）。困ったときは消費者ホットライン188に相談してください。
@@ -145,7 +145,7 @@ export default function Page() {
 
       <h2>まとめ：保険の適用条件について</h2>
       <p>
-        シロアリ被害は火災保険・地震保険のいずれでも原則対象外です。水濡れ事故などがあって判断に迷う場合は、被害状況の写真と専門業者の調査報告書を持って、加入している保険会社に直接相談してください。
+        シロアリ被害そのものは、火災保険では対象外であることが多く（損害保険会社の解説）、地震保険では対象になりません。水濡れ事故などがあって判断に迷う場合は、被害状況の写真と専門業者の調査報告書を持って、加入している保険会社に直接相談してください。
       </p>
       <p>
         また、被害規模が大きい場合は雑損控除（所得税）の活用も検討対象になります。保険会社・税務署・税理士など、公的な窓口に確認しながら判断することをおすすめします。
