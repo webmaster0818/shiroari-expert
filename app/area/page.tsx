@@ -59,6 +59,10 @@ export default function Page() {
             <li>
               <span className="font-bold">東北・北海道</span>：ヤマトシロアリの羽アリは6月ごろの昼間です（沖縄県・東北・北海道以外は4〜5月の昼間）。
             </li>
+            <li>
+              <span className="font-bold">冬の時期</span>：寒い時期のシロアリは、外から見えにくい土の中や木材の中で過ごしていると考えられます（北海道立総合研究機構 林産試験場の調査）。姿が見えなくても、いなくなったとは限りません。
+              <Link className="text-primary underline ml-1" href="/articles/shiroari-tenken-jiki/">冬のシロアリと点検の時期</Link>
+            </li>
           </ul>
         </div>
 
