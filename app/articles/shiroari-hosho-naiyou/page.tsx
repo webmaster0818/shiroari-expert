@@ -35,11 +35,16 @@ const faqs: FaqItem[] = [
     answer:
       "点検口がない、配管で塞がれているなどの理由で進入できない区画は珍しくありません。その区画が保証の対象外となるかどうかは会社によって扱いが異なるため、見積もり時に「進入できなかった箇所は保証に含まれるか」をご確認ください。",
   },
+  {
+    question: "シロアリ駆除は何年おきに行えばよいですか？保証が切れたら必ず再施工が必要ですか？",
+    answer:
+      "公益社団法人日本しろあり対策協会は、シロアリの薬剤は5年の効果を目処に作られているため、確実に防ぐには5年ごとに施工するよう回答しています。また、薬剤の有効期限は5年で、5年を過ぎたからといってすぐに被害が出るわけではないものの、確実に防ぐには再施工を勧めるとしています（いずれも同協会「シロアリQ&A」）。5年保証の期限が近づいたら、まず点検で被害の有無を確かめ、再施工するかを検討してください。",
+  },
 ];
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-10-16">
+    <ArticleLayout meta={meta} updatedAt="2026-11-23">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリ駆除の見積書には、多くの場合「5年保証」と記載されています。
@@ -102,6 +107,12 @@ export default function Page() {
       <p>
         費用そのものの考え方は<Link href="/articles/shiroari-kuchu-hiyou/">駆除費用の相場</Link>、
         業者の比べ方は<Link href="/articles/shiroari-gyousha-erabikata/">業者の選び方</Link>にまとめています。
+        保証が切れた後の再処理の時期（何年おきか）は<Link href="/articles/shiroari-chikunensu-meyasu/">築年数別の目安</Link>でご説明しています。
+      </p>
+      <p>
+        出典：公益社団法人日本しろあり対策協会「シロアリQ&amp;A」
+        （<a href="https://www.hakutaikyo.or.jp/faq/2679.html" target="_blank" rel="noopener noreferrer">シロアリ工事は何年ごとにするものなのでしょうか</a>／
+        <a href="https://www.hakutaikyo.or.jp/faq/2654.html" target="_blank" rel="noopener noreferrer">5年経ったら必ず再施工しなければならないのでしょうか</a>、2026-11-23確認）
       </p>
 
       <FAQ items={faqs} />
