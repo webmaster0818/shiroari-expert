@@ -132,7 +132,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-11-17">
+    <ArticleLayout meta={meta} updatedAt="2026-11-24">
       <FaqJsonLd items={faqs} />
 
       <div className="notice-box">
@@ -318,7 +318,9 @@ export default function Page() {
       </p>
       <h3>2. 火災保険</h3>
       <p>
-        シロアリ被害そのものは火災保険の補償対象外が原則です。例外になりうる条件は
+        シロアリ被害そのものは、火災保険では補償の対象外である場合が多いと損害保険会社は説明しています（
+        <a href="https://www.sompo-direct.co.jp/eraberu/kotsu/article/column038.html" target="_blank" rel="noopener noreferrer">SOMPOダイレクト「火災保険の補償範囲」</a>
+        、2026年11月24日確認）。補償の範囲は保険会社・契約内容によって異なるため、加入している保険会社にご確認ください。詳しくは
         <Link href="/articles/shiroari-kasai-hoken/">シロアリ駆除と火災保険・地震保険</Link>で整理しています。
       </p>
 
