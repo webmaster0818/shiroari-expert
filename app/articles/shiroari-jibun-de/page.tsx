@@ -35,7 +35,7 @@ const faqs: FaqItem[] = [
   {
     question: "シロアリ忌避剤の効果はどれくらい持続しますか？",
     answer:
-      "市販の防蟻剤の効果の持続期間は製品・使用条件により異なるため、製品ラベル・メーカーの記載を確認してください。業務用の土壌処理剤は5年程度の残効が認められていますが、自宅で使用できる薬剤の濃度・量では同等の持続効果は期待できません。",
+      "市販の防蟻剤の効果の持続期間は製品・使用条件により異なるため、製品ラベル・メーカーの記載を確認してください。業者による防除施工については、日本しろあり対策協会がQ&A「５年間の保証がついていますが、５年経ったら必ず再施工しなければならないのでしょうか。」で「薬剤の有効期限は５年です」と回答しています（2026年11月27日確認）。",
   },
   {
     question: "自分でできる予防策は何ですか？",
@@ -46,7 +46,7 @@ const faqs: FaqItem[] = [
 
 export default function Page() {
   return (
-    <ArticleLayout meta={meta} updatedAt="2026-11-19">
+    <ArticleLayout meta={meta} updatedAt="2026-11-27">
       <FaqJsonLd items={faqs} />
       <p>
         シロアリは住宅構造材を加害する害虫ですが、被害規模によっては自分で対応できる範囲もあります。本記事では、<strong>DIYで対応できる範囲と、専門業者に依頼すべき目安</strong>を区分し、市販薬剤の正しい使い方と注意点をご説明します。
@@ -123,8 +123,8 @@ export default function Page() {
       <ol>
         <li><strong>床のきしみ・沈み</strong>：床下の被害が進行している可能性。</li>
         <li><strong>柱を叩いた時の中空音</strong>：内部が食害されているサイン。</li>
-        <li><strong>蟻道（ぎどう）の発見</strong>：床下・基礎に泥の道がある場合は活動中の巣がある証拠。</li>
-        <li><strong>羽アリの大量飛来</strong>：群飛が複数年続く場合、定着している可能性が高い。</li>
+        <li><strong>蟻道（ぎどう）の発見</strong>：川崎市は発見のポイントとして、直射日光が当たらない部分や床下に土で作ったトンネル状の蟻道があるかの確認を挙げています。アリ類も蟻道を作りますが、シロアリのものよりもろく手で簡単に落ちます（<a href="https://www.city.kawasaki.jp/350/cmsfiles/contents/0000006/6005/siroari.pdf" target="_blank" rel="noopener noreferrer">川崎市「シロアリ」（PDF）</a>・2026年11月27日確認）。</li>
+        <li><strong>羽アリの飛来</strong>：東京都保健医療局は、羽アリの飛翔が見られた近くではシロアリによる被害がある可能性があるとしています（<a href="https://www.hokeniryo.metro.tokyo.lg.jp/kankyo/eisei/yomimono/nezukon/shiroari" target="_blank" rel="noopener noreferrer">東京都保健医療局「シロアリ」</a>・2026年11月27日確認）。</li>
         <li><strong>畳の沈み・床鳴り</strong>：和室の畳下まで被害が拡大している可能性。</li>
       </ol>
 
